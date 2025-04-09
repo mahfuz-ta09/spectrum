@@ -76,10 +76,6 @@
     font-size: 20px;
     line-height: 22px;
     font-weight: 500;
-
-    &:hover{
-        border-bottom: rgb(115, 236, 115) solid 3px;
-    }
 }
 
 .login{
