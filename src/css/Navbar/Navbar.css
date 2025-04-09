@@ -1,0 +1,152 @@
+.navbar{
+    width: 100%;
+    height: 10vh;
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #efefef;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+.nav-icon-container{
+    width: 100%;
+    height: 4vh;
+}
+
+
+.nav-icons{
+    max-width: 1340px;
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-icon-social{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap: 5px;
+    width: 50%;
+    padding-left: 5px;
+}
+.fb,.ig,.bell,.cart{
+    width: 20px;
+}
+.nav-icon-website{
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    gap: 5px;
+    width: 50%;
+    padding-right: 5px;
+}
+
+.nav-links-container{
+    width: 100%;
+    height: 6vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1340px;
+    margin: 0 auto;
+    width: 100%;
+    position: relative;
+}
+
+.nav-links{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    gap: 20px;
+    list-style: none;
+}
+
+.nav-link{
+    text-decoration: none;
+    color: #000;
+    font-size: 20px;
+    line-height: 22px;
+    font-weight: 500;
+
+    &:hover{
+        border-bottom: rgb(115, 236, 115) solid 3px;
+    }
+}
+
+.login{
+    text-decoration: none;
+    color: #000;
+    font-size: 16px;
+    font-weight: 500;
+    background-color: transparent;
+    border: 1px solid #000;
+    padding: 5px 20px;
+    border-radius: 2px;
+    transition: all 0.2s ease-in-out;
+    cursor: pointer;
+
+    &:hover{
+        border: 1px solid rgb(115, 236, 115);
+        background-color: rgb(115, 236, 115);
+        color: #fff;
+    }
+}
+
+.language{
+    border: 1px solid #000;
+    padding: 3px 15px;
+    border-radius: 2px;
+}
+
+.nav-close{
+    display: none;
+}
+
+.nav-open{
+    display: none;
+}
+
+
+@media (max-width: 600px) {
+    .nav-links{
+        position: absolute;
+        text-align: start;
+        justify-content: center;
+        flex-direction: column;
+        height: 90vh;
+        width: 50vw;
+        top: 4vh;
+        background: #efefef;
+        z-index: 1000;
+        transition: all 0.5s ease-in-out;
+    }
+
+    .open{
+        right: 0px;
+    }
+    .close{
+        right: -60vw;
+    }
+
+    .nav-close{
+        display: block;
+        font-size: 35px;
+        margin-right: 10px;
+    }
+    
+    .nav-open{
+        display: block;
+        font-size: 35px;
+        margin-right: 10px;
+    }
+    
+}

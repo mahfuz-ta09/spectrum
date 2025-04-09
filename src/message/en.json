@@ -1,0 +1,14 @@
+{
+    "HomePage": {
+      "title": "welcome to website",
+      "about": "Wishing a great day to you!"
+    },
+    "NavBar": {
+      "classes": "class",
+      "notices": "notice",
+      "feed": "feed",
+      "about": "about",
+      "login": "login",
+      "signup": "signup"
+    }
+  }
