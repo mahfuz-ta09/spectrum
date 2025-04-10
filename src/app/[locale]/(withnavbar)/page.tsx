@@ -1,11 +1,10 @@
-import { useTranslations } from "next-intl"
-
+import Banner from "@/component/home/Banner/Banner"
 
 const Page = () => {
-    const t = useTranslations('HomePage')
+    
     return (
-        <div>
-            {t('title')}
+        <div className="page">
+            <Banner />
         </div>
     )
 }
