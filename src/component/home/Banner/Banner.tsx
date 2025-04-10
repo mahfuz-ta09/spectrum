@@ -1,15 +1,19 @@
+'use client'
 import '@/css/home/Banner/Banner.css';
+import { useTranslations } from 'next-intl';
+
 
 const Banner = () => {
-  return (
-    <div className='banner'>
-      <div className='banner__content'>
-        <h1 className='banner__title'>Welcome to Our Website</h1>
-        <p className='banner__description'>Discover amazing content and connect with others.</p>
-        <button className='banner__button'>Get Started</button>
+    const t = useTranslations('Banner');
+
+    return (
+      <div className='banner'>
+        <div className='banner__content'>
+          <h1 className='banner__title'>{t("title")}</h1>
+          <p className='banner__description'>{t("description")}</p>
+        </div>
       </div>
-    </div>
-  )
+    )
 }
 
 export default Banner

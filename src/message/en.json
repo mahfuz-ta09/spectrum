@@ -5,10 +5,15 @@
     },
     "NavBar": {
       "classes": "class",
+      "courses": "course",
       "notices": "notice",
       "feed": "feed",
       "about": "about",
       "login": "login",
       "signup": "signup"
+    },
+    "Banner":{
+      "title": "The future belongs to those who prepare for it today",
+      "description": "We are your friend in need!"
     }
   }
