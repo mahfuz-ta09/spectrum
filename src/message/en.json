@@ -14,6 +14,8 @@
     },
     "Banner":{
       "title": "The future belongs to those who prepare for it today",
-      "description": "We are your friend in need!"
+      "description": "We are your friend in need!",
+      "contact": "Contact us",
+      "course": "all courses"
     }
   }
