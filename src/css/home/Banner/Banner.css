@@ -52,18 +52,24 @@ button{
     padding:10px;
     margin:4px;
     font-weight:bold;
-    background:5fe5d0
+    background:rgb(115, 236, 115)
 }
 
 
 @media (max-width: 500px) {
     .content{
-        padding:20px;
+        padding:5cqw;
     }
     
-    .content h1{
-        font-size:22px
+    
+    html[lang="bn"] .content h1{
+        font-size:26px
     }
+
+    html[lang="en"] .content h1{
+        font-size:30px
+    }
+
     button{
         padding:8px;
         margin:2px;

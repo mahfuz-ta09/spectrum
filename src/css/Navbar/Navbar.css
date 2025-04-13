@@ -130,7 +130,7 @@ html[lang="en"] .nav-link {
         height: 100vh;
         width: 50vw;
         top: 6vh;
-        background: rgba(0, 0, 0,0.4);
+        background: rgba(0, 0, 0,0.8);
         z-index: 1000;
         transition: all 0.5s ease-in-out;
     }
