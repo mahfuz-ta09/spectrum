@@ -1,10 +1,10 @@
 .container{
     width:100%;
-    height: 90vh;
-    background-image:linear-gradient(95deg, #1c1b1ba1, rgb(0 0 0 / 13%)), url(https://images.pexels.com/photos/267586/pexels-photo-267586.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load); 
+    height: 100vh;
+    /* background-image:linear-gradient(95deg, #1c1b1ba1, rgb(0 0 0 / 13%)), url(https://images.pexels.com/photos/267586/pexels-photo-267586.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load); 
     background-repeat:no-repeat;
     background-size:cover;
-    background-position:center;
+    background-position:center; */
     position:relative;
 }
 
@@ -13,6 +13,8 @@
     display:flex;
     justify-content:center;
     align-items:center;  
+    flex-direction: column;
+    position: relative;
 }
 
 .content{
@@ -52,13 +54,63 @@ button{
     padding:10px;
     margin:4px;
     font-weight:bold;
-    background:rgb(115, 236, 115)
+    background:rgb(115, 236, 115);
 }
 
 
+.banner-details{
+    position: absolute;
+    bottom: 0;
+    background-color: rgba(0, 0, 0,0.5);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+    height: 100px;
+    border-top-right-radius:6px;
+    border-top-left-radius: 6px;
+    display: flex;
+    align-content: center;
+    justify-content: space-evenly;
+    gap: 10px;
+}
+
+.banner-detail{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;   
+    width: 100%;
+    height: 100%;
+}
+
+.details-icon{
+    width: 20px;
+    height:20px;
+    border: 3px solid #fff;
+    border-radius: 50%;
+    padding: 6px;
+    color: #fff;
+}
+
+
+.banner-detail h1{
+    font-size: 18px;
+    color: #fff;
+    font-weight: 900;
+}
+
+
+.banner-detail p{
+    font-size: 14px;
+    color: #fff;
+    font-weight: 300;
+}
+
 @media (max-width: 500px) {
     .content{
-        padding:5cqw;
+        padding:5px;
     }
     
     
@@ -74,4 +126,23 @@ button{
         padding:8px;
         margin:2px;
     }
+    .details-icon{
+        width: 18px;
+        height:18px;
+    }
+    
+    
+    .banner-detail h1{
+        font-size: 16px;
+        color: #fff;
+        font-weight: 700;
+    }
+    
+    
+    .banner-detail p{
+        font-size: 12px;
+        color: #fff;
+        font-weight: 300;
+    }
+    
 }
