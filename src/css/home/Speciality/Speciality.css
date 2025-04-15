@@ -100,3 +100,33 @@
     height: 50px;
     border-radius: 50%;
 }
+
+
+@media screen and (max-width:500px){
+    .spacialty-contaier h1{
+        font-size: 30px;
+    }
+    .spacialty-contaier p{
+        font-size: 14px;
+    }
+
+    .speciality-cards{
+        width: 1200px;
+    }
+
+    .speciality-card{
+        width: 120px;
+        height: 100px;
+    }
+    .speciality-card h1{
+        font-size: 16px;
+    }
+    .speciality-card p{
+        font-size: 14px;
+    }
+    .speciality-card img{
+        width: 30px;
+        height: 30px;
+    }
+    
+}
