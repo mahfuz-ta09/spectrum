@@ -1,5 +1,6 @@
 .home-courses{
     width: 100%;
+    margin: 20vh auto 0;
 }
 
 .home-courses-container{
@@ -57,9 +58,11 @@
 .course-years-container{
     width: 100%;
     overflow-x: scroll;
+    margin: 30px auto;
 }
+
 .course-years{
-    width: 1280px;
+    width: 1320px;
     display: flex;
     align-items: center;
     justify-content: center;

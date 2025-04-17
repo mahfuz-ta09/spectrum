@@ -7,10 +7,10 @@ const Courses = () => {
         <div className='home-courses'>
             <div className="home-courses-container">
                 
-                <div className="home-courses-header">
+                {/* <div className="home-courses-header">
                     <h1>Courses</h1>
                     <p>Explore our courses</p>
-                </div>
+                </div> */}
                 
                 <div className="course-group">
                     <button className='depurtment-btn'>SCIENCE</button>

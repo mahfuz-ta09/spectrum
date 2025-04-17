@@ -67,11 +67,11 @@ html[lang="en"] .nav-link {
 .login{
     text-decoration: none;
     color: #000;
-    font-size: 16px;
-    font-weight: 500;
+    font-size: 14px;
+    font-weight: 400;
     background-color: rgb(115, 236, 115);
-    border: 1px solid rgb(115, 236, 115);
-    padding: 5px 10px;
+    border: none;
+    padding: 5px 8px;
     border-radius: 2px;
     transition: all 0.2s ease-in-out;
     cursor: pointer;
@@ -82,16 +82,9 @@ html[lang="en"] .nav-link {
     }
 }
 
-.nav-close{
+.nav-close,.nav-open{
     display: block;
-    font-size: 35px;
-    color: #000;
-    z-index: 1001;
-}
-
-.nav-open{
-    display: block;
-    font-size: 35px;
+    font-size: 25px;
     color: #000;
     z-index: 1001;
 }
@@ -122,11 +115,12 @@ html[lang="en"] .nav-link {
 }
 
 .fb,.ig,.bell,.cart{
-    font-size: 26px;
+    font-size: 20px;
 }
 
 .language{
     padding: 3px 0;
+    width: 90%;
 }
 
 @media (max-width: 600px) {
