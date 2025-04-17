@@ -9,11 +9,13 @@ const Courses = () => {
                     <h1>Courses</h1>
                     <p>Explore our courses</p>
                 </div>
+                
                 <div className="course-group">
                     <button>BSC</button>
                     <button>ARTS</button>
                     <button>COMMERCE</button>
                 </div>
+                
                 <div className="course-title">
                     <button>physics</button>
                     <button>physics</button>
