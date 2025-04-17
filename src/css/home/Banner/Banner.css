@@ -1,11 +1,10 @@
 .container{
     width:100%;
     height: 100vh;
-    /* background-image:linear-gradient(95deg, #1c1b1ba1, rgb(0 0 0 / 13%)), url(https://images.pexels.com/photos/267586/pexels-photo-267586.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load); 
+    position:relative;
+    background: linear-gradient(to right , #1c1b1ba1, rgb(115, 236, 115,0.1)), url(https://images.pexels.com/photos/267586/pexels-photo-267586.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load);
     background-repeat:no-repeat;
     background-size:cover;
-    background-position:center; */
-    position:relative;
 }
 
 .banner{
@@ -13,42 +12,43 @@
     display:flex;
     justify-content:center;
     align-items:center;  
-    flex-direction: column;
-    position: relative;
+    flex-direction: row-reverse;
+    gap: 20px;
 }
 
 .content{
-    padding:150px;
     color:#fff;
-    text-align:center; 
+    text-align:start; 
+    flex: 1;
+    padding: 30px;
 }
 
+
 html[lang="en"] .content p{
-    font-size:28px
+    font-size:28px;
 }
 
 html[lang="bn"] .content p{
-    font-size:22px
+    font-size:22px;
 }
 
-
-
-
 html[lang="bn"] .content h1{
-    font-size:34px
+    font-size:34px;
+    width: 500px;
 }
 
 html[lang="en"] .content h1{
-    font-size:44px
+    font-size:44px;
+    width: 500px;
 }
 
 .links{
     display:flex; 
-    justify-content:center;
+    justify-content:start;
     align-items:center;
     margin-top: 30px;
 }
-button{
+.links button{
     border:none;
     border-radius:2px;
     padding:10px;
@@ -58,22 +58,14 @@ button{
 }
 
 
-.banner-details{
-    position: absolute;
-    bottom: 0;
-    background-color: rgba(0, 0, 0,0.5);
-    backdrop-filter: blur(10px);
-    -webkit-backdrop-filter: blur(10px);
-    max-width: 1200px;
+.banner-details {
+    flex: 1;
     width: 100%;
-    margin: 0 auto;
-    height: 130px;
-    border-top-right-radius:6px;
-    border-top-left-radius: 6px;
     display: flex;
-    align-content: center;
-    justify-content: space-evenly;
-    gap: 10px;
+    align-items: center;
+    justify-content: end;
+    flex-wrap: wrap;
+    gap: 15px;
 }
 
 .banner-detail{
@@ -81,8 +73,20 @@ button{
     align-items: center;
     justify-content: center;
     flex-direction: column;   
-    width: 100%;
-    height: 100%;
+    width: 280px;
+    height: 150px;
+    background: rgba(0, 0, 0, 0.5);
+    border-radius: 6px;
+    box-shadow: 3px 4px 10px rgba(0, 0, 0, 0.4);
+    backdrop-filter: blur(7.3px);
+    -webkit-backdrop-filter: blur(7.3px);
+    border: 2px solid rgba(115, 236, 115, 0.5);
+    cursor: pointer;
+
+    &:hover{
+        scale: 1.02;
+        transition: all 0.2s ease-in-out;
+    }
 }
 
 .details-icon{
@@ -110,40 +114,32 @@ button{
 }
 
 @media (max-width: 500px) {
-    .content{
-        padding:5px;
-    }
-    
-    
     html[lang="bn"] .content h1{
-        font-size:26px
+        font-size:26px;
+        width: 95%;
     }
 
     html[lang="en"] .content h1{
-        font-size:30px
+        font-size:30px;
+        width: 95%;
     }
 
-    button{
-        padding:8px;
-        margin:2px;
+    .container{
+        width:100%;
+        height: auto;
+        padding: 20px 0;
     }
-    .details-icon{
-        width: 18px;
-        height:18px;
+
+    .banner {
+        flex-direction: column;
+        gap: 30px;
+        padding: 0px;
     }
-    
-    
-    .banner-detail h1{
-        font-size: 16px;
-        color: #fff;
-        font-weight: 700;
+    .banner-details {
+        justify-content: center;
     }
-    
-    
-    .banner-detail p{
-        font-size: 12px;
-        color: #fff;
-        font-weight: 300;
+    .banner-detail {
+        width: 80%;
+        border: 1px solid rgba(115, 236, 115, 0.5);
     }
-    
 }

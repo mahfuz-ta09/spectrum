@@ -1,91 +1,67 @@
 .navbar{
-    width: 100%;
-    height: 12vh;
+    width: 6vw;
+    height: 100vh;
     position: fixed;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    background-color: rgba(0, 0, 0,0.5);
-    backdrop-filter: blur(10px);
-    -webkit-backdrop-filter: blur(10px);
+    background-color: rgba(0,0,0,0.3);
     top: 0;
     left: 0;
     z-index: 1000;
 }
 
-.nav-icon-container{
-    width: 100%;
-    height: 5vh;
-}
-
-
-.nav-icons{
-    max-width: 1340px;
-    width: 100%;
-    height: 100%;
-    margin: 0 auto;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.nav-icon-social{
-    display: flex;
-    justify-content: start;
-    align-items: center;
-    gap: 5px;
-    width: 50%;
-    padding-left: 5px;
-}
-
-.fb,.ig,.bell,.cart{
-    width: 20px;
-    color: white;
-}
-.nav-icon-website{
-    display: flex;
-    justify-content: end;
-    align-items: center;
-    gap: 5px;
-    width: 50%;
-    padding-right: 5px;
-}
-
 .nav-links-container{
     height: 100%;
-    height: 7vh;
+    width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    max-width: 1340px;
-    margin: 0 auto;
-    width: 100%;
+    flex-direction: column;
     position: relative;
+    padding: 20px 0;
+    border-right: 1px solid #000;
 }
 
 .nav-links{
-    width: 100%;
-    height: 100%;
+    width: 30vw;
+    height: 100vh;
+    position: absolute;
+    background: #efefef;
+    left: 6vw;
+    top: 0;
     display: flex;
-    justify-content: end;
+    justify-content: center;
     align-items: center;
+    flex-direction: column;
     gap: 20px;
     list-style: none;
+    transition: all 0.5s ease-in-out;  
 }
-
+ 
 .nav-link{
     text-decoration: none;
-    color: #fff;
+    color: #000;
     line-height: 22px;
     font-weight: 500;
 }
+
 html[lang="bn"] .nav-link {
     font-size: 17px;
 }
   
 html[lang="en"] .nav-link {
     font-size: 25px;
+}
+
+.bars-login{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
 }
 
 .login{
@@ -95,10 +71,11 @@ html[lang="en"] .nav-link {
     font-weight: 500;
     background-color: rgb(115, 236, 115);
     border: 1px solid rgb(115, 236, 115);
-    padding: 5px 20px;
+    padding: 5px 10px;
     border-radius: 2px;
     transition: all 0.2s ease-in-out;
     cursor: pointer;
+    z-index: 1001;
 
     &:hover{
         scale: 1.1;
@@ -113,47 +90,57 @@ html[lang="en"] .nav-link {
 }
 
 .nav-close{
-    display: none;
+    display: block;
+    font-size: 35px;
+    color: #000;
+    z-index: 1001;
 }
 
 .nav-open{
-    display: none;
+    display: block;
+    font-size: 35px;
+    color: #000;
+    z-index: 1001;
 }
 
+.open{
+    left: 6vw;
+}
+.close{
+    left: -30vw;
+}
 
 @media (max-width: 600px) {
-    .nav-links{
-        position: absolute;
-        text-align: start;
-        justify-content: center;
-        flex-direction: column;
-        height: 100vh;
-        width: 50vw;
-        top: 6vh;
-        background: rgba(0, 0, 0,0.8);
-        z-index: 1000;
-        transition: all 0.5s ease-in-out;
+    .navbar{
+        width: 100vw;
+        height: 8vh;
     }
+    
+    .nav-links-container{
+        height: 100%;
+        width: 100%;
+        flex-direction: row;
+        padding: 5px;
+    }
+    
 
+    .bars-login{
+        justify-content: end;
+        flex-direction: row-reverse;
+        height: 100%;
+        margin-top: 0px;
+    }
+    .nav-links{
+        width: 60vw;
+        background: #efefef;
+        left: -60vw;
+    }
     .open{
-        right: 0px;
+        left: 0vw;
     }
     .close{
-        right: -60vw;
+        left: -60vw;
     }
 
-    .nav-close{
-        display: block;
-        font-size: 35px;
-        margin-right: 10px;
-        color: #fff;
-    }
-    
-    .nav-open{
-        display: block;
-        font-size: 35px;
-        margin-right: 10px;
-        color: #fff;
-    }
-    
+
 }

@@ -28,8 +28,34 @@ const Navbar = () => {
 
     return (
       <div className='navbar'>
-        <div className="nav-icon-container">
-          <div className="nav-icons">
+        
+        <div className="nav-links-container">
+          <h1 style={{color:"black"}}>logo</h1>
+            <ul className={(open ? 'nav-links open' : 'nav-links close')}>
+              <Link className='nav-link' href="/classes">{t('classes')}</Link>
+              <Link className='nav-link' href="/classes">{t('courses')}</Link>
+              <Link className='nav-link' href="/notices">{t('notices')}</Link>
+              <Link className='nav-link' href="/feed">{t('feed')}</Link>
+              <Link className='nav-link' href="/about">{t('about')}</Link>
+            </ul>
+
+          <div className="bars-login">
+            
+              {
+                  open ? 
+                  <FontAwesomeIcon className="nav-close" onClick={() => setOpen(!open)} icon={faClose}/> : 
+                  <FontAwesomeIcon className="nav-open" onClick={() => setOpen(!open)} icon={faBars}/>
+              }
+              <button className='login'>{t('login')}</button>
+          </div>
+        </div>
+      </div>
+  );
+};
+
+export default Navbar;
+{/* <div className="nav-icon-container"> */}
+          {/* <div className="nav-icons">
             <div className="nav-icon-social">
               <FontAwesomeIcon icon={faFacebook} className='fb' />
               <FontAwesomeIcon icon={faInstagram} className='ig' />
@@ -43,26 +69,5 @@ const Navbar = () => {
                 <option value="en">English</option>
               </select>
             </div>
-          </div>
-        </div>
-        <div className="nav-links-container">
-          <h1>logo</h1>
-          <ul className={(open ? 'nav-links open' : 'nav-links close')}>
-            <Link className='nav-link' href="/classes">{t('classes')}</Link>
-            <Link className='nav-link' href="/classes">{t('courses')}</Link>
-            <Link className='nav-link' href="/notices">{t('notices')}</Link>
-            <Link className='nav-link' href="/feed">{t('feed')}</Link>
-            <Link className='nav-link' href="/about">{t('about')}</Link>
-            <button className='login'>{t('login')}</button>
-          </ul>
-            {
-                open ? 
-                <FontAwesomeIcon className="nav-close" onClick={() => setOpen(!open)} icon={faClose}/> : 
-                <FontAwesomeIcon className="nav-open" onClick={() => setOpen(!open)} icon={faBars}/>
-            }
-        </div>
-      </div>
-  );
-};
-
-export default Navbar;
+          </div> */}
+        {/* </div> */}
