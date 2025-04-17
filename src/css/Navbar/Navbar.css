@@ -123,6 +123,7 @@ html[lang="en"] .nav-link {
     width: 90%;
 }
 
+
 @media (max-width: 600px) {
     .navbar{
         width: 100vw;
@@ -145,6 +146,7 @@ html[lang="en"] .nav-link {
     }
     
     .nav-links{
+        top: 0;
         width: 60vw;
         left: -60vw;
     }
@@ -165,6 +167,17 @@ html[lang="en"] .nav-link {
         justify-content: start;
         flex-direction: row;
         padding: 2px 10px;
+    }
+    .nav-icon-website,.nav-icon-social{
+        gap: 10px;
+    }
+    
+    .fb,.ig,.bell,.cart{
+        font-size: 18px;
+    }
+    
+    .language{
+        width: 80px;
     }
 
 }

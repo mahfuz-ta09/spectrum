@@ -36,7 +36,7 @@ const Speciality = () => {
                             <img src="https://images.pexels.com/photos/30434991/pexels-photo-30434991/free-photo-of-black-and-white-highway-landscape-santiago-di-compostela.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load" alt="" />
                             <p>active users</p>
                         </div>
-                        <div className="speciality-card">
+                        {/* <div className="speciality-card">
                             <h1>5000+</h1>
                             <img src="https://images.pexels.com/photos/30434991/pexels-photo-30434991/free-photo-of-black-and-white-highway-landscape-santiago-di-compostela.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load" alt="" />
                             <p>active users</p>
@@ -65,7 +65,7 @@ const Speciality = () => {
                             <h1>5000+</h1>
                             <img src="https://images.pexels.com/photos/30434991/pexels-photo-30434991/free-photo-of-black-and-white-highway-landscape-santiago-di-compostela.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load" alt="" />
                             <p>active users</p>
-                        </div>
+                        </div> */}
 
 
                     </div>
