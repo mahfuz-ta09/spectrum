@@ -2,7 +2,7 @@
     width:100%;
     height: 100vh;
     position:relative;
-    background: linear-gradient(to right , #1c1b1ba1, rgb(115, 236, 115,0.1)), url(https://images.pexels.com/photos/267586/pexels-photo-267586.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load);
+    background: linear-gradient(to right , rgba(0, 0, 0, 0.2), rgb(0, 0, 0,1)), url(https://images.pexels.com/photos/267586/pexels-photo-267586.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load);
     background-repeat:no-repeat;
     background-size:cover;
 }
@@ -100,14 +100,14 @@ html[lang="en"] .content h1{
 
 
 .banner-detail h1{
-    font-size: 18px;
+    font-size: 20px;
     color: #fff;
     font-weight: 900;
 }
 
 
 .banner-detail p{
-    font-size: 14px;
+    font-size: 16px;
     color: #fff;
     font-weight: 300;
 }
