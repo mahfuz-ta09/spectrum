@@ -6,10 +6,10 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    background-color: rgba(0,0,0,0.3);
     top: 0;
     left: 0;
     z-index: 1000;
+    background: #fff;
 }
 
 .nav-links-container{
@@ -20,7 +20,6 @@
     align-items: center;
     flex-direction: column;
     position: relative;
-    padding: 20px 0;
     border-right: 1px solid #000;
 }
 
@@ -82,13 +81,6 @@ html[lang="en"] .nav-link {
     }
 }
 
-
-.language{
-    border: none;
-    padding: 5px 15px;
-    border-radius: 4px;
-}
-
 .nav-close{
     display: block;
     font-size: 35px;
@@ -110,6 +102,30 @@ html[lang="en"] .nav-link {
     left: -30vw;
 }
 
+.nav-icons{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.nav-icon-website,.nav-icon-social{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+}
+
+.fb,.ig,.bell,.cart{
+    font-size: 26px;
+}
+
+.language{
+    padding: 3px 0;
+}
+
 @media (max-width: 600px) {
     .navbar{
         width: 100vw;
@@ -120,10 +136,10 @@ html[lang="en"] .nav-link {
         height: 100%;
         width: 100%;
         flex-direction: row;
-        padding: 5px;
+        padding:0 2px;
+        margin-top: 20px;
     }
     
-
     .bars-login{
         justify-content: end;
         flex-direction: row-reverse;
@@ -132,7 +148,6 @@ html[lang="en"] .nav-link {
     }
     .nav-links{
         width: 60vw;
-        background: #efefef;
         left: -60vw;
     }
     .open{
@@ -142,5 +157,16 @@ html[lang="en"] .nav-link {
         left: -60vw;
     }
 
+    .nav-icons{
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: start;
+        flex-direction: row;
+        padding: 2px;
+    }
 
 }

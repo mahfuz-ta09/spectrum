@@ -77,7 +77,6 @@ html[lang="en"] .content h1{
     height: 150px;
     background: rgba(0, 0, 0, 0.5);
     border-radius: 6px;
-    box-shadow: 3px 4px 10px rgba(0, 0, 0, 0.4);
     backdrop-filter: blur(7.3px);
     -webkit-backdrop-filter: blur(7.3px);
     border: 2px solid rgba(115, 236, 115, 0.5);
@@ -135,11 +134,13 @@ html[lang="en"] .content h1{
         gap: 30px;
         padding: 0px;
     }
+
     .banner-details {
         justify-content: center;
     }
+    
     .banner-detail {
-        width: 80%;
+        width: 100px;
         border: 1px solid rgba(115, 236, 115, 0.5);
     }
 }
