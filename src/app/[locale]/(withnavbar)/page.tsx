@@ -7,7 +7,7 @@ const Page = () => {
     return (
         <div className="page">
             <Banner />
-            {/* <Speciality /> */}
+            <Speciality />
             <Courses />
         </div>
     )
