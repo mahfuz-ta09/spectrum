@@ -136,7 +136,7 @@ html[lang="en"] .nav-link {
         height: 100%;
         width: 100%;
         flex-direction: row;
-        padding:0 2px;
+        padding:0 10px;
         margin-top: 20px;
     }
     
@@ -146,6 +146,7 @@ html[lang="en"] .nav-link {
         height: 100%;
         margin-top: 0px;
     }
+    
     .nav-links{
         width: 60vw;
         left: -60vw;
@@ -166,7 +167,7 @@ html[lang="en"] .nav-link {
         align-items: center;
         justify-content: start;
         flex-direction: row;
-        padding: 2px;
+        padding: 2px 10px;
     }
 
 }
