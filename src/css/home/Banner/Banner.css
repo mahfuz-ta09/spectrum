@@ -1,10 +1,6 @@
 .container{
     width:100%;
-    height: 80vh;
-    position:relative;
-    background: linear-gradient(to right , rgba(0, 0, 0, 0.2), rgb(0, 0, 0,1)), url(https://images.pexels.com/photos/267586/pexels-photo-267586.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load);
-    background-repeat:no-repeat;
-    background-size:cover;
+    height: 100vh;
 }
 
 .banner{
@@ -12,59 +8,47 @@
     display:flex;
     justify-content:center;
     align-items:center;  
-    flex-direction: row-reverse;
+    flex-direction: column;
     gap: 20px;
 }
 
 
 .content{
     color:#fff;
-    text-align:start; 
-    flex: 1;
+    text-align:center; 
     padding: 30px;
 }
 
 
-html[lang="en"] .content p{
-    font-size:28px;
-}
 
-html[lang="bn"] .content p{
-    font-size:22px;
-}
-
-html[lang="bn"] .content h1{
+.content h1{
+    line-height: 40px;
     font-size:34px;
-    width: 500px;
-}
-
-html[lang="en"] .content h1{
-    font-size:44px;
-    width: 500px;
+    /* width: 500px; */
 }
 
 .links{
     display:flex; 
-    justify-content:start;
+    justify-content:center;
     align-items:center;
     margin-top: 30px;
 }
+
 .links button{
     border:none;
     border-radius:2px;
     padding:10px;
     margin:4px;
     font-weight:bold;
-    background:rgb(115, 236, 115);
+    background:#66CDAA;
 }
 
 
 .banner-details {
-    flex: 1;
     width: 100%;
     display: flex;
     align-items: center;
-    justify-content: end;
+    justify-content: center;
     flex-wrap: wrap;
     gap: 15px;
 }
@@ -74,15 +58,13 @@ html[lang="en"] .content h1{
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    width: 100%;   
-    flex-basis: 33%;
-    /* width: 200px; */
-    height: 120px;
+    width: 180px;   
+    height: 100px;
     background: rgba(0, 0, 0, 0.5);
     border-radius: 6px;
     backdrop-filter: blur(7.3px);
     -webkit-backdrop-filter: blur(7.3px);
-    border: 2px solid rgba(115, 236, 115, 0.5);
+    border: 2px solid #66CDAA;
     cursor: pointer;
 
     &:hover{
@@ -92,37 +74,35 @@ html[lang="en"] .content h1{
 }
 
 .details-icon{
-    width: 30px;
-    height:30px;
-    border: 3px solid rgba(115, 236, 115);
+    width: 20px;
+    height:20px;
+    border: 3px solid #66CDAA;
     border-radius: 50%;
     padding: 6px;
-    color: rgba(115, 236, 115);
+    color: #66CDAA;
     margin-bottom: 10px;
 }
 
 
 .banner-detail h1{
-    font-size: 20px;
+    font-size: 17px;
+    line-height: 20px;
     color: #fff;
-    font-weight: 900;
+    font-weight: 400;
 }
 
 
 .banner-detail p{
-    font-size: 16px;
+    font-size: 13px;
+    line-height: 17px;
     color: #fff;
     font-weight: 300;
 }
 
 @media (max-width: 500px) {
-    html[lang="bn"] .content h1{
+    .content h1{
         font-size:26px;
-        width: 95%;
-    }
-
-    html[lang="en"] .content h1{
-        font-size:30px;
+        line-height: 30px;
         width: 95%;
     }
 

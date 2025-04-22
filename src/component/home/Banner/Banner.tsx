@@ -22,11 +22,6 @@ const Banner = () => {
 
             <div className='banner-details'>
               <div className="banner-detail">
-                <FontAwesomeIcon icon={faUsers} className='details-icon' />
-                <h1>5000+</h1>
-                <p>active users</p>
-              </div>
-              <div className="banner-detail">
                 <FontAwesomeIcon icon={faBook} className='details-icon' />
                 <h1>500+</h1>
                 <p>courses</p>

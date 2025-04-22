@@ -30,7 +30,7 @@ const Navbar = () => {
       <div className='navbar'>
         
         <div className="nav-links-container">
-            <h1 style={{color:"black"}}>logo</h1>
+            <img className='logo' src="https://aiolympiad.xyz/img/ai-olympiad.png" alt="" />
             <ul className={(open ? 'nav-links open' : 'nav-links close')}>
               <Link className='nav-link' href="/classes">{t('classes')}</Link>
               <Link className='nav-link' href="/classes">{t('courses')}</Link>
@@ -70,20 +70,3 @@ const Navbar = () => {
 };
 
 export default Navbar;
-{/* <div className="nav-icon-container"> */}
-          {/* <div className="nav-icons">
-            <div className="nav-icon-social">
-              <FontAwesomeIcon icon={faFacebook} className='fb' />
-              <FontAwesomeIcon icon={faInstagram} className='ig' />
-            </div>
-            <div className="nav-icon-website">
-              <FontAwesomeIcon icon={faBell} className='bell' />
-              <FontAwesomeIcon icon={faCartPlus} className='cart' />
-              <select onChange={handleChange} className='language'>
-                <option value="">language</option>
-                <option value="bn">বাংলা</option>
-                <option value="en">English</option>
-              </select>
-            </div>
-          </div> */}
-        {/* </div> */}

@@ -5,12 +5,19 @@
 }
 
 .page{
-    margin-left: 6vw;
+    height: 100vh;
+    background-image: 
+      linear-gradient(to left, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.5)),
+      url('https://images.pexels.com/photos/694740/pexels-photo-694740.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
 }
 
 @media (max-width: 600px) {
     .page{
-        margin-left: 0;
         margin-top: 8vh;
+        height: 50vh;
     }
 }
