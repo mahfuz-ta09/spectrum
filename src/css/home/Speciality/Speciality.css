@@ -1,16 +1,14 @@
 .speciality-container{
     width:100%;
-    height: 80vh;
+    height: auto;
     background: rgba(79, 150, 126, 0.8);
+    padding: 40px 0;
 }
 
 .spacialty-contaier{
-    top: 0;
     max-width: 1200px;
     width: 100%;
     margin: 0 auto;
-    border-bottom-right-radius:6px;
-    border-bottom-left-radius: 6px;
     gap: 10px;
     display: flex;
     flex-direction: column;
@@ -108,7 +106,7 @@
 
     .speciality-card{
         width: 120px;
-        height: 100px;
+        height: 120px;
     }
     .speciality-card h1{
         font-size: 16px;
