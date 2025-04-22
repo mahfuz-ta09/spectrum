@@ -13,9 +13,3 @@
     background-position: center;
     background-attachment: fixed;
 }
-
-@media (max-width: 600px) {
-    .page{
-        margin-top: 8vh;
-    }
-}
