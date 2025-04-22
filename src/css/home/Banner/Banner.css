@@ -22,9 +22,11 @@
 
 
 .content h1{
-    line-height: 40px;
-    font-size:34px;
-    /* width: 500px; */
+    line-height: 54px;
+    font-size:54px;
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
 }
 
 .links{
