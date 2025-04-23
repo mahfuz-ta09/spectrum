@@ -3,7 +3,7 @@ import '@/css/Navbar/Navbar.css';
 import { usePathname , useRouter } from '@/i18n/navigation'
 import { faFacebook, faInstagram } from '@fortawesome/free-brands-svg-icons';
 import { faBell } from '@fortawesome/free-regular-svg-icons';
-import { faBars, faCartPlus, faClose } from '@fortawesome/free-solid-svg-icons';
+import { faAngleLeft, faAngleRight, faBars, faCartPlus, faClose } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { useTranslations } from 'next-intl';
 import Link from 'next/link';
@@ -13,6 +13,7 @@ import { useState } from 'react';
 
 const Navbar = () => {
     const [open,setOpen] = useState(false);
+    const [short,setShort] = useState(false);
     const t = useTranslations('NavBar');
     const router = useRouter();
     const pathname = usePathname();
@@ -25,18 +26,23 @@ const Navbar = () => {
       changeLang(e.target.value);
     };
 
-
     return (
       <div className='navbar'>
-        <div className="nav-icons">
-          <div className="nav-icon-social">
-            <FontAwesomeIcon icon={faFacebook} className='fb' />
-            <FontAwesomeIcon icon={faInstagram} className='ig' />
-          </div>
-          <div className="nav-icon-website">
-            <FontAwesomeIcon icon={faBell} className='bell' />
-            <FontAwesomeIcon icon={faCartPlus} className='cart' />
-          </div>
+        {
+          short ?
+          <FontAwesomeIcon onClick={()=>setShort(!short)} className='short-angle' icon={faAngleLeft } />:
+          <FontAwesomeIcon onClick={()=>setShort(!short)} className='short-angle' icon={faAngleRight} />
+        }
+
+        <div className={short? "nav-icons short-open":"nav-icons short-close"}>
+            <div className="nav-icon-social">
+              <FontAwesomeIcon icon={faFacebook} className='fb' />
+              <FontAwesomeIcon icon={faInstagram} className='ig' />
+            </div>
+            <div className="nav-icon-website">
+              <FontAwesomeIcon icon={faBell} className='bell' />
+              <FontAwesomeIcon icon={faCartPlus} className='cart' />
+            </div>
             <select onChange={handleChange} className='language'>
               <option value="">language</option>
               <option value="bn">বাংলা</option>

@@ -125,6 +125,9 @@
     border-radius: 3px;
 }
 
+.short-angle{
+    display: none;
+}
 
 @media screen and (max-width: 700px){
     .nav-links-container{
@@ -141,7 +144,6 @@
         color: #fff;
     }
 
-    
     .nav-links{
         position: fixed;
         top: 10vh;
@@ -171,8 +173,32 @@
         list-style: none;
     }
 
-    .nav-icons{
-        top: 50vh;
+        
+    .short-angle{
+        display: block;
+        position: fixed;
+        top: 18vh;
         left: 0px;
+        color: #fff;
+        /* font-size: 40px; */
+        width: 30px;
+        height:30px;
+        border: 3px solid #fff;
+        border-radius: 50%;
     }
+
+    .nav-icons{
+        top: 22vh;
+        width: 120px;
+        left: -100%;
+    }
+
+    .short-open{
+        left: 0;
+    }
+
+    .short-close{
+        left: -100%;
+    }
+
 }
