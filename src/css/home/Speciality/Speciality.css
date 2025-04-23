@@ -57,11 +57,9 @@
     width: 100%;
     height: auto;
     border-radius: 4px;
-    background: rgba(0, 0, 0, 0.8);
-    backdrop-filter: blur(10px);
-    -webkit-backdrop-filter: blur(10px);
+    background: #fff;
     padding: 10px 15px;
-    border: 2px solid rgba(255, 255, 255, 0.9);
+    border: 2px solid rgba(255, 255, 255, 0.3);
     transition: all 0.3s ease-in-out;
     cursor: pointer;
 
@@ -76,14 +74,14 @@
     border-radius: 50%;
     font-weight: 500;
     padding: 4px;
-    color: #000;
-    background: #66CDAA;
+    color: #fff;
+    background: #000;
 }
 
 .second-half div h1{
     font-size: 18px;
     font-weight: 500;
-    color: #66CDAA;
+    color: #000;
 }
 
 .second-half div p{
@@ -91,7 +89,7 @@
     line-height: 16px;
     font-weight: 400;
     text-align: justify;
-    color: #fff;
+    color: #000;
 }
 
 
