@@ -23,7 +23,7 @@
     border-radius: 4px;
     padding: 10px;
     position: fixed;
-    top: 150px;
+    top: 250px;
     left: 10px;
 }
 
@@ -147,7 +147,7 @@
     .nav-links{
         position: fixed;
         top: 10vh;
-        height: 50vh;
+        height: 100vh;
         width:100%;
         background: rgba(0, 0, 0, 0.5);
         transition: all 0.3s ease-in-out;
@@ -175,5 +175,6 @@
 
     .nav-icons{
         top: 50vh;
+        left: 0px;
     }
 }
