@@ -5,118 +5,124 @@
     padding: 40px 0;
 }
 
-.spacialty-contaier{
+
+.specialty-section{
     max-width: 1200px;
-    width: 100%;
     margin: 0 auto;
-    gap: 10px;
-    display: flex;
-    flex-direction: column;
-    padding-top: 30px;
+    width: 100%;
 }
 
-
-.speciality-slider{
-    overflow-x: scroll;
-
-}
-.speciality-slider::-webkit-scrollbar {
-    height: 5px;
-}
-  
-.speciality-slider::-webkit-scrollbar-track {
-    background: transparent;
-}
-  
-.speciality-slider::-webkit-scrollbar-thumb {
-    background-color: rgb(0, 0, 0);
-    border-radius: 10px;
-}
-  
-.speciality-slider::-webkit-scrollbar-thumb:hover {
-    background-color: #fff;
-}
-
-.spacialty-contaier h1{
-    color: rgba(0, 0, 0);
-    font-size: 25px;
-    text-align: center;
-}
-
-.spacialty-contaier p{
-    color: #fff;
-    font-size: 18px;
-    text-align: center;
-}
-
-.speciality-cards{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.specialty-content{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
     gap: 20px;
-    padding: 20px;
-    height: 100%;
-    /* width: 1800px; */
 }
 
-.speciality-card{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    gap: 10px;
-    width:  150px;
-    height: 150px;
-    background-color: #fff;
+.first-half{
+    padding: 40px 20px;
     border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    transition: transform 0.3s ease-in-out;
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.first-half span{
+    font-size: 20px;
+    font-weight: 500;
+    color: #66CDAA;
+}
+
+.first-half h1{
+    font-size: 40px;
+    font-weight: 600;
+    color: #fff;
+}
+
+.first-half p{
+    font-size: 15px;
+    color: #fff;
+    margin: 20px 0;
+}
+
+
+.second-half{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding: 40px 20px;
+    gap: 20px;
+}
+
+.second-half div{
+    width: 100%;
+    height: auto;
+    border-radius: 4px;
+    background: rgba(0, 0, 0, 0.8);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    padding: 10px 15px;
+    border: 2px solid rgba(255, 255, 255, 0.9);
+    transition: all 0.3s ease-in-out;
     cursor: pointer;
-    border: 2px solid rgba(115, 236, 115);
+
+    &:hover{
+        scale: 1.02;
+    }
 }
 
-.speciality-card h1{
-    font-size: 20px;
-    color: #000;
-}
-
-.speciality-card p{
-    font-size: 20px;
-    color: #000;
-}
-
-.speciality-card img{
-    width: 50px;
-    height: 50px;
+.second-half div .icon{
+    width: 35px;
+    height:35px;
     border-radius: 50%;
+    font-weight: 500;
+    padding: 4px;
+    color: #000;
+    background: #66CDAA;
+}
+
+.second-half div h1{
+    font-size: 18px;
+    font-weight: 500;
+    color: #66CDAA;
+}
+
+.second-half div p{
+    font-size: 14px;
+    line-height: 16px;
+    font-weight: 400;
+    text-align: justify;
+    color: #fff;
 }
 
 
-@media screen and (max-width:500px){
-    .spacialty-contaier h1{
-        font-size: 30px;
-    }
-    .spacialty-contaier p{
-        font-size: 14px;
-    }
-
-    .speciality-cards{
-        width: 700px;
-    }
-
-    .speciality-card{
-        width: 120px;
-        height: 120px;
-    }
-    .speciality-card h1{
-        font-size: 16px;
-    }
-    .speciality-card p{
-        font-size: 14px;
-    }
-    .speciality-card img{
-        width: 30px;
-        height: 30px;
+@media screen  {
+    .speciality-container{
+        padding: 10px 0;
     }
     
+    .first-half{
+        padding: 20px 10px;
+        border-radius: 10px;
+        text-align: center;
+    }
+
+    .specialty-content{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .second-half{
+        padding: 20px 5px;
+        gap: 10px;
+    }
+
+    .second-half div h1{
+        font-size: 13px;
+        font-weight: 400;
+    }
+
+    .second-half div p{
+        font-size: 11px;
+        font-weight: 200;
+    }
 }
