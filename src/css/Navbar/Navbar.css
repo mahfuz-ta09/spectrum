@@ -89,7 +89,11 @@
     font-size: 22px;
     font-weight: 400;
 }
-
+.active-link{
+    border-bottom: 1px solid #66CDAA;
+    color: #66CDAA;
+    font-weight: 600;
+}
 .bars-login{
     display: flex;
     justify-content: center;
@@ -131,7 +135,6 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        /* padding: 5px 9px; */
         border: none;
         font-size: 28px;
         background: transparent;

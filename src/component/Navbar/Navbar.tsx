@@ -53,7 +53,7 @@ const Navbar = () => {
             <div className={(open ? 'nav-links open' : 'nav-links close')}>
               <ul>
                 <Link className='nav-link' href="/classes">{t('courses')}</Link>
-                <Link className='nav-link' href="/notices">{t('notices')}</Link>
+                <Link className='nav-link active-link' href="/notices">{t('notices')}</Link>
                 <Link className='nav-link' href="/feed">{t('feed')}</Link>
                 <Link className='nav-link' href="/about">{t('about')}</Link>
               </ul>
