@@ -28,41 +28,44 @@ const Navbar = () => {
 
     return (
       <div className='navbar'>
+        <div className="nav-icons">
+          <div className="nav-icon-social">
+            <FontAwesomeIcon icon={faFacebook} className='fb' />
+            <FontAwesomeIcon icon={faInstagram} className='ig' />
+          </div>
+          <div className="nav-icon-website">
+            <FontAwesomeIcon icon={faBell} className='bell' />
+            <FontAwesomeIcon icon={faCartPlus} className='cart' />
+          </div>
+            <select onChange={handleChange} className='language'>
+              <option value="">language</option>
+              <option value="bn">বাংলা</option>
+              <option value="en">English</option>
+            </select>
+        </div>
+
         
         <div className="nav-links-container">
-            <ul className={(open ? 'nav-links open' : 'nav-links close')}>
-              <Link className='nav-link' href="/classes">{t('classes')}</Link>
-              <Link className='nav-link' href="/classes">{t('courses')}</Link>
-              <Link className='nav-link' href="/notices">{t('notices')}</Link>
-              <Link className='nav-link' href="/feed">{t('feed')}</Link>
-              <Link className='nav-link' href="/about">{t('about')}</Link>
-            </ul>
-            
             <img className='logo' src="https://aiolympiad.xyz/img/ai-olympiad.png" alt="" />
 
-            <div className="nav-icons">
-              <div className="nav-icon-social">
-                <FontAwesomeIcon icon={faFacebook} className='fb' />
-                <FontAwesomeIcon icon={faInstagram} className='ig' />
-              </div>
-              <div className="nav-icon-website">
-                <FontAwesomeIcon icon={faBell} className='bell' />
-                <FontAwesomeIcon icon={faCartPlus} className='cart' />
-              </div>
-                <select onChange={handleChange} className='language'>
-                  <option value="">language</option>
-                  <option value="bn">বাংলা</option>
-                  <option value="en">English</option>
-                </select>
-            </div>
 
+            <div className={(open ? 'nav-links open' : 'nav-links close')}>
+              <ul>
+                <Link className='nav-link' href="/classes">{t('courses')}</Link>
+                <Link className='nav-link' href="/notices">{t('notices')}</Link>
+                <Link className='nav-link' href="/feed">{t('feed')}</Link>
+                <Link className='nav-link' href="/about">{t('about')}</Link>
+              </ul>
+            </div>
+            
           <div className="bars-login">  
+              <button className='classes'>{t('classes')}</button>
+              <button className='login'>{t('login')}</button>
               {
                   open ? 
-                  <FontAwesomeIcon className="nav-close" onClick={() => setOpen(!open)} icon={faClose}/> : 
-                  <FontAwesomeIcon className="nav-open" onClick={() => setOpen(!open)} icon={faBars}/>
+                  <button className="nav-action" onClick={() => setOpen(!open)} ><FontAwesomeIcon style={{fontSize:"21px"}} icon={faClose}/></button> : 
+                  <button className="nav-action" onClick={() => setOpen(!open)} ><FontAwesomeIcon icon={faBars}/></button>
               }
-              <button className='login'>{t('login')}</button>
           </div>
 
         </div>
