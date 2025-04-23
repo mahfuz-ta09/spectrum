@@ -30,7 +30,6 @@ const Navbar = () => {
       <div className='navbar'>
         
         <div className="nav-links-container">
-            <img className='logo' src="https://aiolympiad.xyz/img/ai-olympiad.png" alt="" />
             <ul className={(open ? 'nav-links open' : 'nav-links close')}>
               <Link className='nav-link' href="/classes">{t('classes')}</Link>
               <Link className='nav-link' href="/classes">{t('courses')}</Link>
@@ -38,6 +37,8 @@ const Navbar = () => {
               <Link className='nav-link' href="/feed">{t('feed')}</Link>
               <Link className='nav-link' href="/about">{t('about')}</Link>
             </ul>
+            
+            <img className='logo' src="https://aiolympiad.xyz/img/ai-olympiad.png" alt="" />
 
             <div className="nav-icons">
               <div className="nav-icon-social">
