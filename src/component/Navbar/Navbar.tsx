@@ -46,6 +46,7 @@ const Navbar = () => {
 
         
         <div className="nav-links-container">
+
             <img className='logo' src="https://aiolympiad.xyz/img/ai-olympiad.png" alt="" />
 
 
@@ -63,7 +64,7 @@ const Navbar = () => {
               <button className='login'>{t('login')}</button>
               {
                   open ? 
-                  <button className="nav-action" onClick={() => setOpen(!open)} ><FontAwesomeIcon style={{fontSize:"21px"}} icon={faClose}/></button> : 
+                  <button className="nav-action" onClick={() => setOpen(!open)} ><FontAwesomeIcon style={{fontSize:"32px"}} icon={faClose}/></button> : 
                   <button className="nav-action" onClick={() => setOpen(!open)} ><FontAwesomeIcon icon={faBars}/></button>
               }
           </div>

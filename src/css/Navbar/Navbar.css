@@ -12,6 +12,14 @@
     display: none;
 }
 
+.language{
+    background: #000;
+    color: #fff;
+    border: 1px solid #fff;
+    padding: 3px;
+    width: 100%;
+}
+
 .nav-icons{
     display: flex;
     justify-content: center;
@@ -25,11 +33,6 @@
     position: fixed;
     top: 250px;
     left: 10px;
-}
-
-.language{
-    background: transparent;
-    width: 100%;
 }
 
 .nav-icon-social,.nav-icon-website{
@@ -55,11 +58,13 @@
     width: 100%;
     height: 100%;
 }
-
+.logo-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
 .logo{
-    background: #66CDAA;
-    border-radius: 30px;
-    padding: 10px 20px;
     width: 150px;
 }
 
@@ -73,19 +78,15 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 20px;
-    background: rgb(102, 205, 170,0.7);
-    backdrop-filter: blur(10px);
-    -webkit-backdrop-filter: blur(10px);
-    border-radius: 30px;
-    padding: 5px 70px;
+    gap: 50px;
+    height: 100%;
     list-style: none;
 }
 
 .nav-link{
     text-decoration: none;
     color: #fff;
-    font-size: 19px;
+    font-size: 22px;
     font-weight: 400;
 }
 
@@ -94,18 +95,12 @@
     justify-content: center;
     align-items: center;
     gap: 10px;
-    background: rgb(102, 205, 170,0.7);
-    backdrop-filter: blur(10px);
-    -webkit-backdrop-filter: blur(10px);
-    border-radius: 50px;
-    padding: 2px 3px;
 }
 
 .classes{
-    padding: 5px 9px;
+    padding: 5px 16px;
     width: 50%;
-    border: 1px solid #000;
-    border: none;
+    border: 1px solid #fff;
     font-size: 18px;
     font-weight: 200;
     background: transparent;
@@ -114,16 +109,16 @@
 }
 
 .login{
-    padding: 5px 12px;
+    padding: 5px 16px;
     width: 50%;
     text-decoration: none;
     border: none;
     font-size: 18px;
-    background: #000;
+    background: #fff;
     border: none;
-    color: #fff;
+    color: #000;
     font-weight: 200;
-    border-radius: 12px;
+    border-radius: 3px;
 }
 
 
@@ -136,9 +131,9 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        padding: 5px 9px;
+        /* padding: 5px 9px; */
         border: none;
-        font-size: 18px;
+        font-size: 28px;
         background: transparent;
         color: #fff;
     }
@@ -157,7 +152,7 @@
         right: 0;
     }
     .close{
-            right: -100%;
+        right: -100%;
     }
 
     .nav-links ul{
