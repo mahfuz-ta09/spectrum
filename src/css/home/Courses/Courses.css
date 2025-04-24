@@ -21,9 +21,15 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    gap: 10px;
     color: rgb(0, 0, 0);
     margin: 40px 0;
+}
+
+.home-courses-header h1{
+    font-size: 35px;
+    line-height: 40px;
+    color: #000;
+    font-weight: 300;
 }
 
 .course-group{
