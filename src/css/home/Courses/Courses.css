@@ -22,40 +22,58 @@
     align-items: center;
     flex-direction: column;
     gap: 10px;
-    color: rgba(115, 236, 115);
+    color: rgb(0, 0, 0);
     margin: 40px 0;
 }
 
 .course-group{
-    width: 95%;
+    width: 100%;
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: start;
     flex-direction: row;
-    gap: 10px;
-    margin: 10px 0;
+    position: relative;
+    gap: 5px;
+}
+.open{
+    height: 15vh;
 }
 
 .depurtment-btn{
-    padding: 10px;
-    width: 150px;
+    background: #66CDAA;
+    padding: 10px 30px;
     border: none;
     border-radius: 4px;
+    color: #000;
+    font-weight: 500;
+    cursor: pointer;
 }
 
+
 .course-title{
+    position: absolute;
+    top: 55px;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
+    gap: 5px;
     text-align: center;
-    width: 97%;
+    width: 70%;
+    padding: 30px 0;
+    background: #4a7769;
+    border-radius: 4px;
+}
+
+.close{
+    display: none;
 }
 
 .course-title-btn{
-    border-right: 1px solid black;
-    padding: 5px;
+    border:none;
+    padding: 5px 12px;
     font-size: 14px;
+    border-radius: 2px;
 }
 
 .course-years-container{
@@ -129,4 +147,21 @@
     gap: 10px;
     margin: 20px 0;
     color: #fff;
+}
+
+
+@media screen and (max-width:900px) {
+    .course-title{
+        width: 95%;
+    }
+    
+    .open{
+        height: 22vh;
+    }
+    
+
+    .depurtment-btn{
+        padding: 10px 20px;
+    }
+
 }

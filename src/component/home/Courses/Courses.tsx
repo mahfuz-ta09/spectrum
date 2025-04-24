@@ -1,40 +1,50 @@
+'use client'
 import '@/css/home/Courses/Courses.css';
+import { faAngleDown } from '@fortawesome/free-solid-svg-icons';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { useState } from 'react';
 
 
 
 const Courses = () => {
+    const [show,setShow] = useState(false);
+
+    const handleCourses = () => {
+        setShow(!show);
+    }
+
     return (
         <div className='home-courses'>
             <div className="home-courses-container">
                 
-                {/* <div className="home-courses-header">
-                    <h1>Courses</h1>
-                    <p>Explore our courses</p>
-                </div> */}
-                
-                <div className="course-group">
-                    <button className='depurtment-btn'>SCIENCE</button>
-                    <button className='depurtment-btn'>COMMERCE</button>
-                    <button className='depurtment-btn'>ARTS</button>
+                <div className="home-courses-header">
+                    <h1>Choose your group and course</h1>
+                    <h1>to enrole</h1>
                 </div>
                 
-                <div className="course-title">
-                    <button className='course-title-btn'>physics</button>
-                    <button className='course-title-btn'>physics</button>
-                    <button className='course-title-btn'>physics</button>
-                    <button className='course-title-btn'>physics</button>
-                    <button className='course-title-btn'>physics</button>
-                    <button className='course-title-btn'>pdasdahysics</button>
-                    <button className='course-title-btn'>physics</button>
-                    <button className='course-title-btn'>physics</button>
-                    <button className='course-title-btn'>physicdfds</button>
-                    <button className='course-title-btn'>physics</button>
-                    <button className='course-title-btn'>physics</button>
-                    <button className='course-title-btn'>physics</button>
-                    <button className='course-title-btn'>physics</button>
-                    <button className='course-title-btn'>physics</button>
-                    <button className='course-title-btn'>physics</button>
+                <div className={show ? "course-group open":"course-group"}>
+                    <button onClick={()=>handleCourses()} className='depurtment-btn'>SCIENCE <FontAwesomeIcon icon={faAngleDown}/></button>
+                    <button onClick={()=>handleCourses()} className='depurtment-btn'>COMMERCE <FontAwesomeIcon icon={faAngleDown}/></button>
+                    <button onClick={()=>handleCourses()} className='depurtment-btn'>HUMANITIES <FontAwesomeIcon icon={faAngleDown}/></button>
+                    <div className={show ? "course-title" : "close"}>
+                        <button className='course-title-btn'>physics</button>
+                        <button className='course-title-btn'>physics</button>
+                        <button className='course-title-btn'>physics</button>
+                        <button className='course-title-btn'>physics</button>
+                        <button className='course-title-btn'>physics</button>
+                        <button className='course-title-btn'>pdasdahysics</button>
+                        <button className='course-title-btn'>physics</button>
+                        <button className='course-title-btn'>physics</button>
+                        <button className='course-title-btn'>physicdfds</button>
+                        <button className='course-title-btn'>physics</button>
+                        <button className='course-title-btn'>physics</button>
+                        <button className='course-title-btn'>physics</button>
+                        <button className='course-title-btn'>physics</button>
+                        <button className='course-title-btn'>physics</button>
+                        <button className='course-title-btn'>physics</button>
+                    </div>
                 </div>
+
 
                 <div className="course-years-container">
                     <div className="course-years">

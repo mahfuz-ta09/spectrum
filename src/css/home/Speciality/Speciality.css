@@ -29,19 +29,20 @@
 
 .first-half span{
     font-size: 20px;
-    font-weight: 500;
-    color: #66CDAA;
+    line-height: 22px;
+    font-weight: 600;
 }
 
 .first-half h1{
     font-size: 40px;
     font-weight: 600;
-    color: #fff;
+    color: #efefef;
 }
 
 .first-half p{
-    font-size: 15px;
-    color: #fff;
+    font-size: 14px;
+    line-height: 22px;
+    color: #efefef;
     margin: 20px 0;
 }
 
@@ -62,6 +63,7 @@
     border: 2px solid rgba(255, 255, 255, 0.3);
     transition: all 0.3s ease-in-out;
     cursor: pointer;
+    box-shadow: 2px 2px 6px #000;
 
     &:hover{
         scale: 1.02;
@@ -100,7 +102,7 @@
     }
     
     .first-half{
-        padding: 20px 10px;
+        padding: 20px 20px;
         border-radius: 10px;
         text-align: start;
     }
@@ -111,7 +113,7 @@
     }
 
     .second-half{
-        padding: 20px 5px;
+        padding: 20px 15px;
         gap: 10px;
     }
 
