@@ -28,6 +28,7 @@
 .home-courses-header h1{
     font-size: 35px;
     line-height: 40px;
+    text-align: center;
     color: #000;
     font-weight: 300;
 }
@@ -162,12 +163,16 @@
     }
     
     .open{
-        height: 22vh;
+        height: 25vh;
     }
     
 
     .depurtment-btn{
-        padding: 10px 20px;
+        padding: 10px 10px;
     }
 
+    .home-courses-header h1{
+        font-size: 25px;
+        line-height: 30px;
+    }
 }
