@@ -22,11 +22,11 @@ const Courses = () => {
                     <h1>to enrole</h1>
                 </div>
                 
-                <div className={show ? "course-group open":"course-group"}>
+                <div className={show ? "course-group open-course":"course-group"}>
                     <button onClick={()=>handleCourses()} className='depurtment-btn'>SCIENCE <FontAwesomeIcon icon={faAngleDown}/></button>
                     <button onClick={()=>handleCourses()} className='depurtment-btn'>COMMERCE <FontAwesomeIcon icon={faAngleDown}/></button>
                     <button onClick={()=>handleCourses()} className='depurtment-btn'>HUMANITIES <FontAwesomeIcon icon={faAngleDown}/></button>
-                    <div className={show ? "course-title" : "close"}>
+                    <div className={show ? "course-title" : "close-course"}>
                         <button className='course-title-btn'>physics</button>
                         <button className='course-title-btn'>physics</button>
                         <button className='course-title-btn'>physics</button>

@@ -42,7 +42,7 @@
     position: relative;
     gap: 5px;
 }
-.open{
+.open-course{
     height: 15vh;
 }
 
@@ -72,7 +72,7 @@
     border-radius: 4px;
 }
 
-.close{
+.close-course{
     display: none;
 }
 
