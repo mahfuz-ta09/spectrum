@@ -2,6 +2,7 @@ import Footer from "@/component/Footer/Footer"
 import Banner from "@/component/home/Banner/Banner"
 import Courses from "@/component/home/Courses/Courses"
 import Speciality from "@/component/home/Speciality/Speciality"
+import WhyChooseUs from "@/component/home/WhyChooseUs/WhyChooseUs"
 
 
 
@@ -12,6 +13,7 @@ const Page = () => {
             <Banner />
             <Speciality />
             <Courses />
+            <WhyChooseUs />
             <Footer />
         </div>
     )

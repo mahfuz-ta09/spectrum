@@ -1,0 +1,132 @@
+.why-choose-us-container{
+    width: 100%;
+    background: #fff;
+}
+
+.wcu-container{
+    background: linear-gradient(to right, rgba(102, 205, 170, 0.3), rgba(255, 255, 255));
+    width: 100%;
+    height: 100%;
+}
+
+.wcu-first-half-header{
+    font-size: 40px;
+    font-weight: 600;
+    color: #000;
+}
+
+.wcu-first-half-pera{
+    font-size: 20px;
+    line-height: 22px;
+    padding: 10px 0;
+    font-weight: 400;
+    color: #000;
+}
+
+.wcu-content{
+    max-width: 1300px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 100px 0 100px;
+    gap: 20px;
+}
+
+.wcu-first-half{
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.wcu-first-half-img{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+}
+
+.wcu-first-half-img-1{
+    display: grid;
+    grid-template-rows: 1.5fr 1fr;
+    gap: 10px;
+}
+
+.wcu-first-half-img-2{
+    display: grid;
+    grid-template-rows: 1fr 1.5fr;
+    gap: 10px;
+}
+
+.img-half{
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+.wcu-second-half{
+    flex: 1;
+    display: grid;
+    grid-template-columns: repeat(2, 2fr);
+    gap: 10px;
+    justify-content: center;
+}
+
+.wcu-second-half-card{
+    width: 250px;
+    height: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.card-number{
+    background: #fff;
+    width: 60px;
+    height:60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 7px;
+}
+
+.wcu-second-half-card-header{
+    font-size: 30px;
+    line-height: 32px;
+    font-weight: 600;
+    color: #000;
+}
+
+.wcu-second-half-card-pera{
+    font-size: 16px;
+    line-height: 20px;
+    padding: 10px 0;
+    font-weight: 300;
+    color: #000;
+}
+
+
+@media screen and (max-width: 550px){
+    .wcu-content{
+        padding: 50px 10px;
+        flex-direction: column;
+    }
+
+    .wcu-second-half{
+        width: 100%;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 0px;
+    }
+        
+    .wcu-second-half-card{
+        width: 95%;
+        height: 100%;
+        padding: 20px 0;
+    }
+}
