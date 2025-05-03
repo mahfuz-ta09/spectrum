@@ -100,7 +100,7 @@
 
 
 .years{
-    height: 300px;
+    height: 330px;
     width: 300px;
     padding: 10px;
     border-radius: 5px;
@@ -114,10 +114,10 @@
 }
 
 .years span{
-    font-size: 38px;
-    color: rgba(115, 236, 115);
-    border: 1px solid rgba(115, 236, 115);
-    padding: 2px;
+    font-size: 20px;
+    color: #66CDAA;
+    border: 1px solid #66CDAA;
+    padding: 2px 8px;
     background: linear-gradient(rgba(0, 0, 0));
 }
 
@@ -143,6 +143,15 @@
     padding: 7px;
     border: none;
     border-radius: 2px;
+}
+
+.rear-btn-2{
+    width: 100%;
+    padding: 7px;
+    border: none;
+    border-radius: 2px;
+    color: #fff;
+    background: #66CDAA;
 }
 
 .details{

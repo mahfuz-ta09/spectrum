@@ -57,7 +57,7 @@ const Courses = () => {
                             </div>
                             <div className="rear-btn">
                                 <button className='rear-btn-1'>enroll</button>
-                                <button className='rear-btn-1'>details</button>
+                                <button className='rear-btn-2'>details</button>
                             </div>
                         </div>
                         <div className="years">
@@ -69,7 +69,7 @@ const Courses = () => {
                             </div>
                             <div className="rear-btn">
                                 <button className='rear-btn-1'>enroll</button>
-                                <button className='rear-btn-1'>details</button>
+                                <button className='rear-btn-2'>details</button>
                             </div>
                         </div>
                         <div className="years">
@@ -81,7 +81,7 @@ const Courses = () => {
                             </div>
                             <div className="rear-btn">
                                 <button className='rear-btn-1'>enroll</button>
-                                <button className='rear-btn-1'>details</button>
+                                <button className='rear-btn-2'>details</button>
                             </div>
                         </div>
                         <div className="years">
@@ -93,7 +93,7 @@ const Courses = () => {
                             </div>
                             <div className="rear-btn">
                                 <button className='rear-btn-1'>enroll</button>
-                                <button className='rear-btn-1'>details</button>
+                                <button className='rear-btn-2'>details</button>
                             </div>
                         </div>
                     </div>

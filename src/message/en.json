@@ -4,6 +4,7 @@
       "about": "Wishing a great day to you!"
     },
     "NavBar": {
+      "home": "home",
       "classes": "class",
       "courses": "course",
       "notices": "notice",

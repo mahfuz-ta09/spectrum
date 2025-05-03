@@ -1,12 +1,12 @@
 'use client';
 import '@/css/Navbar/Navbar.css';
-import { usePathname , useRouter } from '@/i18n/navigation'
+import { usePathname , useRouter , Link } from '@/i18n/navigation'
 import { faFacebook, faInstagram } from '@fortawesome/free-brands-svg-icons';
 import { faBell } from '@fortawesome/free-regular-svg-icons';
-import { faAngleLeft, faAngleRight, faBars, faCartPlus, faClose } from '@fortawesome/free-solid-svg-icons';
+import { faAngleLeft, faAngleRight, faBars, faCartPlus, faClose, faHome } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { useTranslations } from 'next-intl';
-import Link from 'next/link';
+import { useLocale, useTranslations } from 'next-intl';
+// import Link from 'next/link';
 import { useState } from 'react';
 
 
@@ -17,15 +17,17 @@ const Navbar = () => {
     const t = useTranslations('NavBar');
     const router = useRouter();
     const pathname = usePathname();
+    const locale = useLocale();
 
     const changeLang = (lng: string) => {
       router.push(pathname, { locale: lng });
-    };
+    }
 
     const handleChange = (e: React.ChangeEvent<HTMLSelectElement>) => {
       changeLang(e.target.value);
-    };
-
+    }
+console.log(pathname)
+    
     return (
       <div className='navbar'>
         {
@@ -52,18 +54,16 @@ const Navbar = () => {
 
         
         <div className="nav-links-container">
-
-            <img className='logo' src="https://aiolympiad.xyz/img/ai-olympiad.png" alt="" />
-
-
-            <div className={(open ? 'nav-links open' : 'nav-links close')}>
-              <ul>
-                <Link className='nav-link' href="/classes">{t('courses')}</Link>
-                <Link className='nav-link active-link' href="/notices">{t('notices')}</Link>
-                <Link className='nav-link' href="/feed">{t('feed')}</Link>
-                <Link className='nav-link' href="/about">{t('about')}</Link>
-              </ul>
-            </div>
+          <img className='logo' src="https://aiolympiad.xyz/img/ai-olympiad.png" alt="" />
+          
+          <div className={(open ? 'nav-links open' : 'nav-links close')}>
+            <ul>
+              <Link href="/"        className={pathname==="/"?'nav-link active-link':'nav-link'}><FontAwesomeIcon icon={faHome}/></Link>
+              <Link href="/feed"    className={pathname==="/feed"?'nav-link active-link':'nav-link'}>{t('feed')}</Link>
+              <Link href="/notices" className={pathname==="/notices"?'nav-link active-link':'nav-link'}>{t('notices')}</Link>
+              <Link href="/about"   className={pathname==="/about"?'nav-link active-link':'nav-link'}>{t('about')}</Link>
+            </ul>
+          </div>
             
           <div className="bars-login">  
               <button className='classes'>{t('classes')}</button>
