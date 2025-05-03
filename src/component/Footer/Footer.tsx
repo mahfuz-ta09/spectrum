@@ -18,8 +18,8 @@ const Footer = () => {
                 <Link className='footer-link' href="/about">{t('about')}</Link>
             </ul>
             <div className="footer-social-icon">
-                <FontAwesomeIcon icon={faFacebook} className='fb' />
-                <FontAwesomeIcon icon={faInstagram} className='ig' />
+                <FontAwesomeIcon icon={faFacebook} className='footer-fb' />
+                <FontAwesomeIcon icon={faInstagram} className='footer-ig' />
             </div>
             <div>
                 <p className='copy-warning'>Copyright © 2025 SPECTRUM. All rights reserved.</p>
