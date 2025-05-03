@@ -1,3 +1,4 @@
+import Footer from "@/component/Footer/Footer"
 import Banner from "@/component/home/Banner/Banner"
 import Courses from "@/component/home/Courses/Courses"
 import Speciality from "@/component/home/Speciality/Speciality"
@@ -11,6 +12,7 @@ const Page = () => {
             <Banner />
             <Speciality />
             <Courses />
+            <Footer />
         </div>
     )
 }

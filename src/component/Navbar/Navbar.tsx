@@ -24,7 +24,7 @@ const Navbar = () => {
     const handleChange = (e: React.ChangeEvent<HTMLSelectElement>) => {
       changeLang(e.target.value);
     }
-console.log(pathname)
+
     
     return (
       <div className='navbar'>
