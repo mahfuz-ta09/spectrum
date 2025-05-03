@@ -5,8 +5,7 @@ import { faFacebook, faInstagram } from '@fortawesome/free-brands-svg-icons';
 import { faBell } from '@fortawesome/free-regular-svg-icons';
 import { faAngleLeft, faAngleRight, faBars, faCartPlus, faClose, faHome } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { useLocale, useTranslations } from 'next-intl';
-// import Link from 'next/link';
+import { useTranslations } from 'next-intl';
 import { useState } from 'react';
 
 
@@ -17,7 +16,6 @@ const Navbar = () => {
     const t = useTranslations('NavBar');
     const router = useRouter();
     const pathname = usePathname();
-    const locale = useLocale();
 
     const changeLang = (lng: string) => {
       router.push(pathname, { locale: lng });
