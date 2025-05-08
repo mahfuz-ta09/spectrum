@@ -1,0 +1,19 @@
+.notices-container{
+    width: 100%;
+}
+
+.notices-banner{
+    height: 40vh;
+    width: 100%;
+    background: linear-gradient(to bottom, rgba(42, 96, 78,0.9), rgba(0, 0, 0,0.5)),url(https://images.pexels.com/photos/139312/pexels-photo-139312.jpeg?auto=compress&cs=tinysrgb);
+    background-size: cover;
+    background-position: cover;
+    display: flex;
+    align-items: end;
+    justify-content: center;
+    margin-bottom: 40vh;
+}
+
+.notices-title{
+
+}

@@ -3,6 +3,7 @@ import { faArrowAltCircleRight } from '@fortawesome/free-regular-svg-icons'
 import { faCancel } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
+
 const FeedNav = () => {
     return (
         <div className="question-nav">
