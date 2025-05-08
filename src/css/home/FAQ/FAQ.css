@@ -88,7 +88,6 @@
 
 .question-checkbox:checked ~ .faq-question-body {
   max-height: 400px;
-  background: rgb(42, 96, 78);
 }
 
 .question-header {
