@@ -129,6 +129,7 @@
         
     .wcu-second-half-card{
         width: 95%;
+        margin: 0 auto;
         height: 100%;
         padding: 20px 0;
     }
