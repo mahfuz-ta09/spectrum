@@ -17,7 +17,7 @@ const FAQ = () => {
 
                 <div className="faq-question">
 
-                    <div className="question">
+                    <div className="ind-question">
                         <input type="checkbox" name="accordion" id="question1" className="question-checkbox" hidden />
                         
                         <label htmlFor="question1" className="question-header">
@@ -25,7 +25,7 @@ const FAQ = () => {
                             <FontAwesomeIcon icon={faAngleDown} className="plus-icon" />
                         </label>
 
-                        <div className="question-body">
+                        <div className="faq-question-body">
                             <p>
                             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo molestias
                             eum esse, dolore maxime voluptate iste.
@@ -33,7 +33,7 @@ const FAQ = () => {
                         </div>
                     </div>
 
-                    <div className="question">
+                    <div className="ind-question">
                         <input type="checkbox" name="accordion" id="question2" className="question-checkbox" hidden />
                         
                         <label htmlFor="question2" className="question-header">
@@ -41,7 +41,7 @@ const FAQ = () => {
                             <FontAwesomeIcon icon={faAngleDown} className="plus-icon" />
                         </label>
 
-                        <div className="question-body">
+                        <div className="faq-question-body">
                             <p>
                             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo molestias
                             eum esse, dolore maxime voluptate iste.
@@ -49,7 +49,7 @@ const FAQ = () => {
                         </div>
                     </div>
 
-                    <div className="question">
+                    <div className="ind-question">
                         <input type="checkbox"  name="accordion" id="question3" className="question-checkbox" hidden />
                         
                         <label htmlFor="question3" className="question-header">
@@ -57,7 +57,7 @@ const FAQ = () => {
                             <FontAwesomeIcon icon={faAngleDown} className="plus-icon" />
                         </label>
 
-                        <div className="question-body">
+                        <div className="faq-question-body">
                             <p>
                             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo molestias
                             eum esse, dolore maxime voluptate iste.
@@ -65,7 +65,7 @@ const FAQ = () => {
                         </div>
                     </div>
 
-                    <div className="question">
+                    <div className="ind-question">
                         <input type="checkbox"  name="accordion" id="question4" className="question-checkbox" hidden />
                         
                         <label htmlFor="question4" className="question-header">
@@ -73,7 +73,7 @@ const FAQ = () => {
                             <FontAwesomeIcon icon={faAngleDown} className="plus-icon" />
                         </label>
 
-                        <div className="question-body">
+                        <div className="faq-question-body">
                             <p>
                             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo molestias
                             eum esse, dolore maxime voluptate iste.
