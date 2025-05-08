@@ -1,9 +1,6 @@
-'use client';
-
 import '@/css/home/FAQ/FAQ.css';
 import { faAngleDown } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { useEffect } from 'react';
 
 
 const FAQ = () => {
