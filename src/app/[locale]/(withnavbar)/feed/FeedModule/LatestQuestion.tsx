@@ -12,7 +12,7 @@ const LatestQuestion = () => {
                 <div className="personal-info">
                     <div className="personal-profile">
                         <FontAwesomeIcon icon={faUser} />
-                        <p className='personal-profile-name'>hagu tanzim</p>
+                        <p className='personal-profile-name'>tanzim tanzim</p>
                     </div>
                     <FontAwesomeIcon icon={faFile} />
                 </div>
