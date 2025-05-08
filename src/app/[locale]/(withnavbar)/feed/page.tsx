@@ -1,12 +1,13 @@
 import Footer from "@/component/Footer/Footer"
+import Feed from "./Feed"
 
 
 const Page = () => {
   return (
-    <div>
-        feed
+    <>
+        <Feed />
         <Footer />
-    </div>
+    </>
   )
 }
 

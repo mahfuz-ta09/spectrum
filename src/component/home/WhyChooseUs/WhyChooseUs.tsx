@@ -2,6 +2,7 @@ import '@/css/home/WhyChooseUs/WhyChooseUs.css';
 
 
 const WhyChooseUs = () => {
+
     return (
       <div className='why-choose-us-container'>
         <div className='wcu-container'>
