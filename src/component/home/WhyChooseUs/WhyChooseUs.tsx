@@ -39,7 +39,7 @@ const WhyChooseUs = () => {
                 </div>
 
                 <div className='wcu-second-half-card'>
-                <h1 className='card-number'>02</h1>
+                  <h1 className='card-number'>02</h1>
                   <h1 className='wcu-second-half-card-header'>Expert-Verified Content</h1>
                   <p className='wcu-second-half-card-pera'>
                     Every resource is validated by department toppers and alumni 

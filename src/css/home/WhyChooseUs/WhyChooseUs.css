@@ -90,9 +90,10 @@
 
 .card-number{
     background: #fff;
-    box-shadow: 4px 4px 20px rgba(0, 0, 0,0.4);
-    width: 60px;
-    height:60px;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0,0.3);
+    width: 50px;
+    height:50px;
+    font-size: 30px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -139,8 +140,18 @@
         margin: 0 auto;
     }
 
-    .card-number{
-        width: 50px;
-        height:50px;
+    .wcu-second-half-card-header{
+        font-size: 20px;
+        line-height: 25px;
     }
+
+    .card-number{
+        width: 40px;
+        height:40px;
+        font-size: 25px;
+    }
+    .wcu-second-half-card-pera{
+        padding: 0px 0;
+    }
+    
 }
