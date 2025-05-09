@@ -15,7 +15,7 @@ const page = () => {
                 </form>
                 <div className='logindetails-footer'>
                     <button><FontAwesomeIcon icon={faGoogle}/>google</button>   
-                    <Link className='logindetails-footer-lnk' href="/signup">Don't have account? <span>signup</span></Link>
+                    <Link className='logindetails-footer-lnk' href="/signup">Don&apos;t have account? <span>signup</span></Link>
                 </div>
             </div>
         </div>
