@@ -104,24 +104,24 @@
 }
 
 .classes{
-    padding: 5px 16px;
+    padding: 6px 18px;
     border: 1px solid #fff;
-    font-size: 18px;
-    font-weight: 200;
+    font-size: 16px;
+    font-weight: 400;
     background: transparent;
     color: #fff;
     border-radius: 3px;
 }
 
 .login{
-    padding: 5px 16px;
+    padding: 2px 18px;
     text-decoration: none;
     border: none;
-    font-size: 18px;
+    font-size: 16px;
     background: #fff;
     border: none;
     color: #000;
-    font-weight: 200;
+    font-weight: 400;
     border-radius: 3px;
 }
 

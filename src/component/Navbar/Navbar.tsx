@@ -65,7 +65,7 @@ const Navbar = () => {
             
           <div className="bars-login">  
               <button className='classes'>{t('classes')}</button>
-              <button className='login'>{t('login')}</button>
+              <Link href="/login" className='login'>{t('login')}</Link>
               {
                   open ? 
                   <button className="nav-action" onClick={() => setOpen(!open)} ><FontAwesomeIcon style={{fontSize:"37px"}} icon={faClose}/></button> : 
