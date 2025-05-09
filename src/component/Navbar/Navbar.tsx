@@ -58,7 +58,7 @@ const Navbar = () => {
             <ul>
               <Link href="/"        className={pathname==="/"?'nav-link active-link':'nav-link'}><FontAwesomeIcon icon={faHome}/></Link>
               <Link href="/feed"    className={pathname==="/feed"?'nav-link active-link':'nav-link'}>{t('feed')}</Link>
-              <Link href="/notices" className={pathname==="/notices"?'nav-link active-link':'nav-link'}>{t('notices')}</Link>
+              <Link href="/notice" className={pathname==="/notice"?'nav-link active-link':'nav-link'}>{t('notices')}</Link>
               <Link href="/about"   className={pathname==="/about"?'nav-link active-link':'nav-link'}>{t('about')}</Link>
             </ul>
           </div>

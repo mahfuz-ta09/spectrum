@@ -11,9 +11,76 @@
     display: flex;
     align-items: end;
     justify-content: center;
-    margin-bottom: 40vh;
 }
 
 .notices-title{
+    color: #fff;
+    font-size: 45px;
+    font-weight: 500;
+}
 
+.notice-board {
+    border: 1px solid rgb(42, 96, 78);
+    max-width: 1300px;
+    width: 98%;
+    border-collapse: collapse;
+    margin: 20px auto;
+    box-shadow: 0 0 10px rgba(42, 96, 78,0.3);
+}
+
+.notice-board thead {
+  background-color: #f5f5f5;
+}
+
+.notice-board th, .notice-board td {
+  padding: 12px 16px;
+  border: 1px solid #ddd;
+  text-align: left;
+}
+
+.notice-board a {
+  text-decoration: underline;
+  color: rgb(42, 96, 78);
+  padding: 6px 12px;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+
+.notice-headeline{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1300px;
+    width: 98%;
+    margin: 20px auto;
+}
+
+
+.notice-headeline form{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.notice-headeline form input{
+    padding: 5px;
+}
+
+.notice-headeline form button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5px;
+    border: none;
+    background: transparent;
+    font-size: 25px;
+}
+
+@media  screen and (max-width:500px) {
+    .notice-headeline{
+        align-items: start;
+        flex-direction: column;
+    }
 }
