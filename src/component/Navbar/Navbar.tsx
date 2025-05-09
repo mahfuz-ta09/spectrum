@@ -56,15 +56,15 @@ const Navbar = () => {
           
           <div className={(open ? 'nav-links open' : 'nav-links close')}>
             <ul>
-              <Link href="/"        className={pathname==="/"?'nav-link active-link':'nav-link'}><FontAwesomeIcon icon={faHome}/></Link>
-              <Link href="/feed"    className={pathname==="/feed"?'nav-link active-link':'nav-link'}>{t('feed')}</Link>
+              <Link href="/"       className={pathname==="/"?'nav-link active-link':'nav-link'}><FontAwesomeIcon icon={faHome}/></Link>
+              <Link href="/feed"   className={pathname==="/feed"?'nav-link active-link':'nav-link'}>{t('feed')}</Link>
               <Link href="/notice" className={pathname==="/notice"?'nav-link active-link':'nav-link'}>{t('notices')}</Link>
-              <Link href="/about"   className={pathname==="/about"?'nav-link active-link':'nav-link'}>{t('about')}</Link>
+              <Link href="/about"  className={pathname==="/about"?'nav-link active-link':'nav-link'}>{t('about')}</Link>
             </ul>
           </div>
-            
+
           <div className="bars-login">  
-              <button className='classes'>{t('classes')}</button>
+              <Link href="/" className='classes'>{t('classes')}</Link>
               <Link href="/login" className='login'>{t('login')}</Link>
               {
                   open ? 

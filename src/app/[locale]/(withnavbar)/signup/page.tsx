@@ -1,9 +1,10 @@
 import '@/css/Login/Login.css'
-import { faGoogle } from '@fortawesome/free-brands-svg-icons'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import Link from 'next/link'
 
+
 const page = () => {
+
+    
     return (
         <div className='loginpage'>
             <div className='logindetails'>
@@ -14,8 +15,7 @@ const page = () => {
                     <input type="password" placeholder='your password'/>
                     <button >Login</button>
                 </form>
-                <div className='logindetails-footer'>
-                    <button><FontAwesomeIcon icon={faGoogle}/>google</button>   
+                <div className='logindetails-footer'> 
                     <Link className='logindetails-footer-lnk' href="/login">Already have an account? <span>login</span></Link>
                 </div>
             </div>

@@ -91,26 +91,18 @@
     font-size: 20px;
     font-weight: 400;
 }
+
 .active-link{
     border-bottom: 1px solid #66CDAA;
     color: #66CDAA;
     font-weight: 600;
 }
+
 .bars-login{
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 10px;
-}
-
-.classes{
-    padding: 6px 18px;
-    border: 1px solid #fff;
-    font-size: 16px;
-    font-weight: 400;
-    background: transparent;
-    color: #fff;
-    border-radius: 3px;
 }
 
 .login{
@@ -123,6 +115,20 @@
     color: #000;
     font-weight: 400;
     border-radius: 3px;
+}
+
+.classes{
+    padding: 1px 18px;
+    text-decoration: none;
+    border: none;
+    font-size: 16px;
+    background: transparent;
+    border: none;
+    color: #000;
+    font-weight: 400;
+    border-radius: 3px;
+    border: 1px solid #fff;
+    color: #fff;
 }
 
 .short-angle{
