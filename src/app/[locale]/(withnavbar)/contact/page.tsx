@@ -10,8 +10,8 @@ const page = () => {
             <div className='contact-content'>
                 <div className="contact-container">
                     <div className="contact-info">
-                        <h2>Let's get in touch</h2>
-                        <p>We're open for any suggestion or just to have a chat</p>
+                        <h2>Let&apos;s get in touch</h2>
+                        <p>We&apos;re open for any suggestion or just to have a chat</p>
                         <ul>
                         <li><strong>Address:</strong> hell yes hell yes hell yes</li>
                         <li><strong>Phone:</strong> +1235 2355 98</li>
@@ -33,7 +33,7 @@ const page = () => {
                         </form>
                     </div>
                 </div>
-            </div>npm run dev
+            </div>
 
             <Footer />
         </div>
