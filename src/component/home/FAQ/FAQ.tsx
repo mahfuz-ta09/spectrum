@@ -1,6 +1,8 @@
+'use client'
 import '@/css/home/FAQ/FAQ.css';
 import { faAngleDown } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import Link from 'next/link';
 
 
 const FAQ = () => {
@@ -12,7 +14,7 @@ const FAQ = () => {
                 <div className="faq-header">
                     <h1 className='faq-header-que'>How can we help you?</h1>
                     <p className='faq-header-det'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat, voluptatibus numquam. Ea dicta praesentium accusantium possimus consequuntur eos tenetur quibusdam.</p>
-                    <button className='faq-ask-que'>ask something else</button>
+                    <Link href="/contact" className='faq-ask-que'>ask something else</Link>
                 </div>
 
                 <div className="faq-question">

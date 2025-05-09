@@ -1,7 +1,7 @@
 .home-courses{
     width: 100%;
     margin: 0 auto;
-    background: #efefef;
+    background: #fff;
     padding: 30px 0;
 }
 
@@ -47,11 +47,11 @@
 }
 
 .depurtment-btn{
-    background: #66CDAA;
+    background: rgb(42, 96, 78);
     padding: 10px 30px;
     border: none;
     border-radius: 4px;
-    color: #000;
+    color: #fff;
     font-weight: 500;
     cursor: pointer;
 }
@@ -68,7 +68,7 @@
     text-align: center;
     width: 70%;
     padding: 30px 0;
-    background: #4a7769;
+    background: rgb(42, 96, 78);
     border-radius: 4px;
 }
 
@@ -151,7 +151,7 @@
     border: none;
     border-radius: 2px;
     color: #fff;
-    background: #66CDAA;
+    background: rgb(42, 96, 78);
 }
 
 .details{
