@@ -3,6 +3,7 @@ import '@/css/home/Banner/Banner.css';
 import { faBook, faMoneyBill, faUsers } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { useTranslations } from 'next-intl';
+import Link from 'next/link';
 
 
 const Banner = () => {
@@ -15,8 +16,8 @@ const Banner = () => {
               <h1>{t("title")}</h1>
               <p>{t("description")}</p>
               <div className="links">
-                <button type="button">{t("contact")}</button>
-                <button type="button">{t("course")}</button>
+                <Link className='links-button' href='/contact'>{t("contact")}</Link>
+                <Link className="links-button" href="">{t("course")}</Link>
               </div>
             </div>  
 

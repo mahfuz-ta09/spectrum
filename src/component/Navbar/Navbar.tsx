@@ -68,7 +68,7 @@ const Navbar = () => {
               <button className='login'>{t('login')}</button>
               {
                   open ? 
-                  <button className="nav-action" onClick={() => setOpen(!open)} ><FontAwesomeIcon style={{fontSize:"32px"}} icon={faClose}/></button> : 
+                  <button className="nav-action" onClick={() => setOpen(!open)} ><FontAwesomeIcon style={{fontSize:"37px"}} icon={faClose}/></button> : 
                   <button className="nav-action" onClick={() => setOpen(!open)} ><FontAwesomeIcon icon={faBars}/></button>
               }
           </div>

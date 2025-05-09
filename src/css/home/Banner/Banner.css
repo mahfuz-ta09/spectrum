@@ -34,15 +34,16 @@
     justify-content:center;
     align-items:center;
     margin-top: 30px;
+    gap: 20px;
 }
 
-.links button{
+.links-button{
+    text-decoration: none;
     border: 1px solid #fff;
     color: #fff;
     font-size: 18px;
     border-radius:2px;
-    padding:10px;
-    margin:4px;
+    padding:4px 17px;
     font-weight:bold;
     background:transparent;
 }
@@ -143,7 +144,8 @@
         font-size: 14px;
     }
 
-    .links button{
+    .links-button{
+        padding: 2px 15px;
         font-size: 15px;
     }
     
