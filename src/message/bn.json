@@ -5,7 +5,7 @@
     },
     "NavBar": {
       "home": "হোম",
-      "classes": "ক্লাস",
+      "dashboard": "ড্যাশবোর্ড",
       "courses": "কোর্স",
       "notices": "নোটিশ",
       "feed": "ফিড",

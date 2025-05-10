@@ -64,7 +64,7 @@ const Navbar = () => {
           </div>
 
           <div className="bars-login">  
-              <Link href="/" className='classes'>{t('classes')}</Link>
+              <Link href="/Dashboard" className='classes'>{t('dashboard')}</Link>
               <Link href="/login" className='login'>{t('login')}</Link>
               {
                   open ? 

@@ -4,13 +4,15 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import Link from 'next/link'
 
 const page = () => {
+
+    
     return (
         <div className='loginpage'>
             <div className='logindetails'>
                 <h1>Login</h1>
                 <form>
-                    <input type="email" />
-                    <input type="password" />
+                    <input type="email" className='your email'/>
+                    <input type="password" className='your password'/>
                     <button >Login</button>
                 </form>
                 <div className='logindetails-footer'>

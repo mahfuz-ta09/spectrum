@@ -1,9 +1,9 @@
 import Footer from '@/component/Footer/Footer'
 import '@/css/Contact/Contact.css'
 
-const page = () => {
-    
-    
+
+
+const page = () => { 
     return (
         <div className='contact-holder'>
             
