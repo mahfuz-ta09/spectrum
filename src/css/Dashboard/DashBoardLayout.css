@@ -109,4 +109,20 @@
     height: 95vh;
     overflow: hidden;
     border-radius: 10px;
+    position: relative;
+}
+
+.dashboard-user{
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding-right:10px ;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.dashboard-user p,h1{
+    font-size: 17px;
 }

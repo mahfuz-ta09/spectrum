@@ -47,8 +47,9 @@ const layout = ({children}: {children: React.ReactNode}) => {
             </div>
             <div className='dash-content'>
                 <p>title:{roles[0]?.title}</p>
-                <div className=''>
-
+                <div className='dashboard-user'>
+                    <p>hello mr/mrs</p>
+                    <h1>amarnam@busyness.com</h1>
                 </div>
                 {children}
             </div>
