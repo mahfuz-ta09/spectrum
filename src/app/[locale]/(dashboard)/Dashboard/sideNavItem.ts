@@ -1,13 +1,13 @@
 
-interface Role{
+interface item{
     title: string,
     path: string,
     icon: string,
 }
 
 
-const sideNavItem = (role: Role) =>{
-    const items:Role[] = []
+export const sideNavItem = (role: string) =>{
+    const items:item[] = []
 
     switch(role){
 

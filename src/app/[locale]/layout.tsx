@@ -2,7 +2,7 @@ import {NextIntlClientProvider, hasLocale} from 'next-intl';
 import {notFound} from 'next/navigation';
 import {routing} from '@/i18n/routing';
 import { Poppins , Anek_Bangla} from 'next/font/google'
-
+import './globals.css'
 
 
 const poppins = Poppins({
