@@ -12,7 +12,7 @@ const useLogInAuth = () => {
     const [error,setError] = useState(null)
 
 
-    const loginUser = useCallback(async(credentials:any)=>{
+    const loginUser = useCallback(async(credentials: any)=>{
         setIsLoading(true)
         setError(null)
         
