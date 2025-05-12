@@ -1,7 +1,7 @@
 import { useCallback, useState } from "react"
 
 
-let baseUrl =
+const baseUrl =
   process.env.NEXT_PUBLIC_BUILD === 'local'
     ? process.env.NEXT_PUBLIC_AUTH_URL_LOCAL as string
     : process.env.NEXT_PUBLIC_AUTH_URL_PRODUCTION as string;
