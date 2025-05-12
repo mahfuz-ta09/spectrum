@@ -23,8 +23,6 @@ const useLogInAuth = () => {
                 credentials: 'include'
             })
             const resData = await response.json()
-            
-            console.log(resData)
             return resData
         }catch(err:any){
             setError(err)

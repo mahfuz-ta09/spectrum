@@ -72,8 +72,13 @@ const Page = () => {
 
         try{
             const logInResponse = await loginUser(formData)
-            console.log(logInResponse)
-            toast.success(logInResponse?.message)
+            if(logInResponse.success){
+                localStorage.setItem('accessToken',logInResponse.meta.accessToken)
+                reset()
+                toast.success(logInResponse?.message)
+            }else{
+                toast.error(logInResponse.message)
+            }
         }catch(err:any){
             console.log(err)
             toast.error(err?.message)
