@@ -16,7 +16,7 @@ type Inputs = {
 }
 
 
-const page = () => {
+const Page = () => {
     const auth = getAuth(app)
     const provider = new GoogleAuthProvider()
     const { loginUser } = useLogInAuth()
@@ -99,4 +99,4 @@ const page = () => {
     )
 }
 
-export default page
+export default Page
