@@ -1,22 +1,97 @@
+'use client'
 import '@/css/Login/Login.css'
 import { faGoogle } from '@fortawesome/free-brands-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import Link from 'next/link'
+import { getAuth, signInWithPopup, GoogleAuthProvider } from "firebase/auth"
+import { app } from '@/utils/firebaseConfig'
+import useLogInAuth from '@/hooks/useLogInAuth'
+import { toast } from 'react-toastify'
+import { convertFormData } from '@/utils/convertFormData'
+import { useForm, SubmitHandler } from "react-hook-form"
+
+type Inputs = {
+  email: string
+  password: string
+}
+
 
 const page = () => {
+    const auth = getAuth(app)
+    const provider = new GoogleAuthProvider()
+    const { loginUser } = useLogInAuth()
+    const { register , handleSubmit , reset } = useForm<Inputs>()
 
-    
+
+    const googlePopUpLogin = async() =>{
+        try{
+            const result = await signInWithPopup(auth,provider)
+            const credential:any = GoogleAuthProvider.credentialFromResult(result)
+            const token = credential.accessToken
+            const user = result.user
+            
+            if(token && user){
+                const formData = convertFormData({
+                    name:user.displayName??"",
+                    email:user.email??"",
+                    photo:user.photoURL??"",
+                    phone:user.phoneNumber??"",
+                    provider:"google"
+                })
+                
+                console.log("Insert inside the box")
+
+                try{
+                    const logInResponse = await loginUser(formData)
+                    console.log(logInResponse)
+                    toast.success(logInResponse?.message)
+                }catch(err){
+                    console.log(err)
+                    toast.error("Error logged in");
+                }
+            }
+            
+        }catch(err){
+            console.log(err)
+            toast.error("Error logged in");
+        }
+    }
+
+    const onSubmit: SubmitHandler<Inputs> = async(data) => {
+        if(!data?.email || !data?.password){
+            toast.error("No empty field allowed")
+            return
+        }
+
+        const formData = convertFormData({
+            email:data.email,
+            password:data.email,
+            provider:"custom"
+        })
+        
+
+        try{
+            const logInResponse = await loginUser(formData)
+            console.log(logInResponse)
+            toast.success(logInResponse?.message)
+        }catch(err:any){
+            console.log(err)
+            toast.error(err?.message)
+        }
+    }
+
+
     return (
         <div className='loginpage'>
             <div className='logindetails'>
                 <h1>Login</h1>
-                <form>
-                    <input type="email" className='your email'/>
-                    <input type="password" className='your password'/>
-                    <button >Login</button>
+                <form onSubmit={handleSubmit(onSubmit)}>
+                    <input type="email" placeholder="your email" {...register("email")}  className='your email'/>
+                    <input type="password" placeholder="your password"  {...register("password")} className='your password'/>
+                    <button type='submit'>Login</button>
                 </form>
                 <div className='logindetails-footer'>
-                    <button><FontAwesomeIcon icon={faGoogle}/>google</button>   
+                    <button onClick={googlePopUpLogin}><FontAwesomeIcon icon={faGoogle}/>google</button>   
                     <Link className='logindetails-footer-lnk' href="/signup">Don&apos;t have account? <span>signup</span></Link>
                 </div>
             </div>

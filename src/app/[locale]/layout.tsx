@@ -2,6 +2,7 @@ import {NextIntlClientProvider, hasLocale} from 'next-intl';
 import {notFound} from 'next/navigation';
 import {routing} from '@/i18n/routing';
 import { Poppins , Anek_Bangla} from 'next/font/google'
+import { Bounce, ToastContainer } from 'react-toastify'
 import './globals.css'
 
 
@@ -33,6 +34,19 @@ export default async function LocaleLayout({
       <body>
         <NextIntlClientProvider>
           {children}
+          <ToastContainer
+            position="top-center"
+            autoClose={5000}
+            hideProgressBar={false}
+            newestOnTop={false}
+            closeOnClick={false}
+            rtl={false}
+            pauseOnFocusLoss
+            draggable
+            pauseOnHover
+            theme="light"
+            transition={Bounce}
+          />
         </NextIntlClientProvider>
       </body>
     </html>
