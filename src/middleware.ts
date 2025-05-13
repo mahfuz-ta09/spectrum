@@ -1,3 +1,4 @@
+import { cookies } from 'next/headers';
 import {  NextRequest } from 'next/server';
 import { jwtDecode } from 'jwt-decode'
 import createIntlMiddleware from 'next-intl/middleware';
@@ -9,7 +10,9 @@ export async function middleware(request: NextRequest) {
     };
     let modifiedRequest = request;
 
-    const token = request.cookies.get('accessToken')?.value;
+    
+    const cookie = await cookies()
+    const token = cookie.get('accessToken')?.value
     let user
 
     if(token) user = await jwtDecode(token)

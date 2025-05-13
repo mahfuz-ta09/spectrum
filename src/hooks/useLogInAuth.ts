@@ -1,3 +1,4 @@
+import { setCookie } from "@/utils/setCookie";
 import { useCallback, useState } from "react"
 
 const baseUrl =
@@ -22,6 +23,9 @@ const useLogInAuth = () => {
                 credentials: 'include',
             })
             const resData = await response.json()
+
+            localStorage.setItem('accessToken',resData.meta.accessToken)
+            setCookie('accessToken', resData.meta.accessToken)
             return resData
         }catch(err:any){
             setError(err)

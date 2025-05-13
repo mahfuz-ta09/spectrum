@@ -42,7 +42,6 @@ const Page = () => {
                 try{
                     const logInResponse = await loginUser(formData)
                     if(logInResponse.success){
-                        localStorage.setItem('accessToken',logInResponse.meta.accessToken)
                         reset()
                         toast.success(logInResponse?.message)
                     }else{
