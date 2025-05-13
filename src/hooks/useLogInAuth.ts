@@ -1,6 +1,5 @@
 import { useCallback, useState } from "react"
 
-
 const baseUrl =
   process.env.NEXT_PUBLIC_BUILD === 'local'
     ? process.env.NEXT_PUBLIC_AUTH_URL_LOCAL as string
@@ -17,10 +16,10 @@ const useLogInAuth = () => {
         setError(null)
         
         try{    
-            const response = await fetch(baseUrl,{
+            const response = await fetch(`${baseUrl}/auth/signin`,{
                 method:'POST',
                 body: credentials,
-                credentials: 'include'
+                credentials: 'include',
             })
             const resData = await response.json()
             return resData

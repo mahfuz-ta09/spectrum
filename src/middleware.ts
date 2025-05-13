@@ -10,9 +10,7 @@ export async function middleware(request: NextRequest) {
     };
     let modifiedRequest = request;
 
-    
-    const cookie = await cookies()
-    const token = cookie.get('accessToken')?.value
+    const token = request.cookies.get('accessToken')?.value;
     let user
 
     if(token) user = await jwtDecode(token)
