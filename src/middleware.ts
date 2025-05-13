@@ -1,4 +1,3 @@
-import { cookies } from 'next/headers';
 import {  NextRequest } from 'next/server';
 import { jwtDecode } from 'jwt-decode'
 import createIntlMiddleware from 'next-intl/middleware';
