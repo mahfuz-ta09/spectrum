@@ -38,13 +38,16 @@ const Page = () => {
                     phone:user.phoneNumber??"",
                     provider:"google"
                 })
-                
-                console.log("Insert inside the box")
 
                 try{
                     const logInResponse = await loginUser(formData)
-                    console.log(logInResponse)
-                    toast.success(logInResponse?.message)
+                    if(logInResponse.success){
+                        localStorage.setItem('accessToken',logInResponse.meta.accessToken)
+                        reset()
+                        toast.success(logInResponse?.message)
+                    }else{
+                        toast.error(logInResponse.message)
+                    }
                 }catch(err){
                     console.log(err)
                     toast.error("Error logged in");

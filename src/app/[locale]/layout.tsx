@@ -30,7 +30,7 @@ export default async function LocaleLayout({
   }
 
   return (
-    <html className={`${poppins.className} ${AnekBangla.className}`} lang={locale}>
+    <html className={locale==='en'?`${poppins.className}` : `${AnekBangla.className}`} lang={locale}>
       <body>
         <NextIntlClientProvider>
           {children}

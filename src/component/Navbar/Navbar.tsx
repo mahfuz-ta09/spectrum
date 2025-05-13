@@ -17,12 +17,8 @@ const Navbar = () => {
     const router = useRouter();
     const pathname = usePathname();
 
-    const changeLang = (lng: string) => {
-      router.push(pathname, { locale: lng });
-    }
-
     const handleChange = (e: React.ChangeEvent<HTMLSelectElement>) => {
-      changeLang(e.target.value);
+      router.push(pathname, { locale: e.target.value });
     }
 
     
