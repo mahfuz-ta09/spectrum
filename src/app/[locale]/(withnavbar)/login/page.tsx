@@ -9,6 +9,7 @@ import useLogInAuth from '@/hooks/useLogInAuth'
 import { toast } from 'react-toastify'
 import { convertFormData } from '@/utils/convertFormData'
 import { useForm, SubmitHandler } from "react-hook-form"
+import { useRouter } from 'next/router'
 
 type Inputs = {
   email: string
@@ -21,6 +22,7 @@ const Page = () => {
     const provider = new GoogleAuthProvider()
     const { loginUser } = useLogInAuth()
     const { register , handleSubmit , reset } = useForm<Inputs>()
+    const router = useRouter()
 
 
     const googlePopUpLogin = async() =>{
@@ -43,6 +45,7 @@ const Page = () => {
                     const logInResponse = await loginUser(formData)
                     if(logInResponse.success){
                         reset()
+                        router.push('/Dashboard')
                         toast.success(logInResponse?.message)
                     }else{
                         toast.error(logInResponse.message)
