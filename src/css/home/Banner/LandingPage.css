@@ -34,6 +34,7 @@
     position: absolute;
     top: 30%;
     left: -5vw;
+    border-radius: 10px;
 }
 
 .landingpage-text-container{
