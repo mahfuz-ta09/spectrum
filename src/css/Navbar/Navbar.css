@@ -131,6 +131,23 @@
     color: #fff;
 }
 
+.logout-btn{
+    padding: 6px 18px;
+    text-decoration: none;
+    border: none;
+    font-size: 16px;
+    background: red;
+    border: none;
+    color: #000;
+    font-weight: 400;
+    border-radius: 3px;
+    border: none;
+    color: #fff;
+    &:hover{
+        scale: .9;
+    }
+}
+
 .short-angle{
     display: none;
 }

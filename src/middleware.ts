@@ -23,9 +23,9 @@ export async function middleware(request: NextRequest) {
             const remainingPath = request.nextUrl.pathname.replace(`/${srcPath}`, '');
             let newUrl
             
-            if(!user?.userProfile?.email && remainingPath==='/Dashboard'){
+            if(!user?.email && remainingPath==='/Dashboard'){
                 newUrl = new URL(`/${targetPath}/login`, request.url);
-            }else if(user?.userProfile?.email && (remainingPath==='/login' || remainingPath==='/signup')){
+            }else if(user?.email && (remainingPath==='/login' || remainingPath==='/signup')){
                 newUrl = new URL(`/${targetPath}`, request.url);
             }else{
                 newUrl = new URL(`/${targetPath}${remainingPath}`, request.url);

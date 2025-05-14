@@ -11,6 +11,7 @@
       "feed": "feed",
       "about": "about",
       "login": "login",
+      "logout": "logout",
       "signup": "signup"
     },
     "Banner":{

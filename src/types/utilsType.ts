@@ -15,3 +15,15 @@ export interface UserLogInInfo{
     phone?:number;
     provider?:string
 }
+
+export interface UserInfo {
+    email: string;
+    role: string;
+    status: string;
+}
+export interface jwtPayload{
+    email: string;
+    role: string;
+    status: string;
+    iat: number;
+}

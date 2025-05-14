@@ -80,6 +80,7 @@ const Page = () => {
             if(logInResponse.success){
                 localStorage.setItem('accessToken',logInResponse.meta.accessToken)
                 reset()
+                router.push('/Dashboard')
                 toast.success(logInResponse?.message)
             }else{
                 toast.error(logInResponse.message)

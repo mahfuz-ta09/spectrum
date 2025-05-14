@@ -1,16 +1,19 @@
 'use client';
+import { useState } from 'react';
 import '@/css/Navbar/Navbar.css';
+import { useUserInfo } from '@/hooks/useUserInfo';
 import { usePathname , useRouter , Link } from '@/i18n/navigation'
 import { faFacebook, faInstagram } from '@fortawesome/free-brands-svg-icons';
 import { faBell } from '@fortawesome/free-regular-svg-icons';
 import { faAngleLeft, faAngleRight, faBars, faCartPlus, faClose, faHome } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { useTranslations } from 'next-intl';
-import { useState } from 'react';
+import { logOutHandler } from '@/utils/logOutHandler';
 
 
 
 const Navbar = () => {
+  const user = useUserInfo();
     const [open,setOpen] = useState(false);
     const [short,setShort] = useState(false);
     const t = useTranslations('NavBar');
@@ -21,6 +24,11 @@ const Navbar = () => {
       router.push(pathname, { locale: e.target.value });
     }
 
+    const handleLogOut = async() => {
+      const res = await logOutHandler()
+      console.log(res)
+      router.refresh();
+    }
     
     return (
       <div className='navbar'>
@@ -61,7 +69,11 @@ const Navbar = () => {
 
           <div className="bars-login">  
               <Link href="/Dashboard" className='classes'>{t('dashboard')}</Link>
-              <Link href="/login" className='login'>{t('login')}</Link>
+              {
+                user?.email? 
+                  <button onClick={()=>handleLogOut()} className='logout-btn'>{t('logout')}</button> : 
+                  <Link href="/login" className='login'>{t('login')}</Link>
+              }
               {
                   open ? 
                   <button className="nav-action" onClick={() => setOpen(!open)} ><FontAwesomeIcon style={{fontSize:"37px"}} icon={faClose}/></button> : 
