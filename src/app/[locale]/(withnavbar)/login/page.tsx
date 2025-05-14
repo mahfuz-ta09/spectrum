@@ -16,7 +16,6 @@ type Inputs = {
   password: string
 }
 
-
 const Page = () => {
     const auth = getAuth(app)
     const provider = new GoogleAuthProvider()
