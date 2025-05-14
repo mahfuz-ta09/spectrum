@@ -50,16 +50,15 @@ const Page = () => {
                     }else{
                         toast.error(logInResponse.message)
                     }
-                }catch(err){
+                }catch(err:any){
                     console.log(err)
-                    toast.error("Error logged in");
+                    toast.error(err.message);
                 }
             }
             
         }catch(err:any){
             console.log(err)
             toast.error(err.message)
-            // toast.error("Error logged in");
         }
     }
 
