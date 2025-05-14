@@ -6,6 +6,7 @@
     "NavBar": {
       "home": "home",
       "dashboard": "Dashboard",
+      "classes": "classes",
       "courses": "course",
       "notices": "notice",
       "feed": "feed",

@@ -53,35 +53,42 @@ const Navbar = () => {
               <option value="en">English</option>
             </select>
         </div>
-
-        
-        <div className="nav-links-container">
-          <img className='logo' src="https://aiolympiad.xyz/img/ai-olympiad.png" alt="" />
-          
-          <div className={(open ? 'nav-links open' : 'nav-links close')}>
-            <ul>
-              <Link href="/"       className={pathname==="/"?'nav-link active-link':'nav-link'}><FontAwesomeIcon icon={faHome}/></Link>
-              <Link href="/feed"   className={pathname==="/feed"?'nav-link active-link':'nav-link'}>{t('feed')}</Link>
-              <Link href="/notice" className={pathname==="/notice"?'nav-link active-link':'nav-link'}>{t('notices')}</Link>
-              <Link href="/about"  className={pathname==="/about"?'nav-link active-link':'nav-link'}>{t('about')}</Link>
-            </ul>
-          </div>
-
-          <div className="bars-login">  
+        <div className="navbar-content">
+          <div className="navbar-header">
+            <div className="navbar-header-content">
+              <Link href="/Dashboard" className='classes'>{t('classes')}</Link>
               <Link href="/Dashboard" className='classes'>{t('dashboard')}</Link>
-              {
-                user?.email? 
-                  <button onClick={()=>handleLogOut()} className='logout-btn'>{t('logout')}</button> : 
-                  <Link href="/login" className='login'>{t('login')}</Link>
-              }
-              {
-                  open ? 
-                  <button className="nav-action" onClick={() => setOpen(!open)} ><FontAwesomeIcon style={{fontSize:"37px"}} icon={faClose}/></button> : 
-                  <button className="nav-action" onClick={() => setOpen(!open)} ><FontAwesomeIcon icon={faBars}/></button>
-              }
+            </div>
           </div>
 
+          <div className="nav-links-container">
+            <img className='logo' src="https://aiolympiad.xyz/img/ai-olympiad.png" alt="" />
+            
+            <div className={(open ? 'nav-links open' : 'nav-links close')}>
+              <ul>
+                <Link href="/"       className={pathname==="/"?'nav-link active-link':'nav-link'}><FontAwesomeIcon icon={faHome}/></Link>
+                <Link href="/feed"   className={pathname==="/feed"?'nav-link active-link':'nav-link'}>{t('feed')}</Link>
+                <Link href="/notice" className={pathname==="/notice"?'nav-link active-link':'nav-link'}>{t('notices')}</Link>
+                <Link href="/about"  className={pathname==="/about"?'nav-link active-link':'nav-link'}>{t('about')}</Link>
+              </ul>
+            </div>
+
+            <div className="bars-login">  
+                {
+                  user?.email? 
+                    <button onClick={()=>handleLogOut()} className='logout-btn'>{t('logout')}</button> : 
+                    <Link href="/login" className='login'>{t('login')}</Link>
+                }
+                {
+                    open ? 
+                    <button className="nav-action" onClick={() => setOpen(!open)} ><FontAwesomeIcon style={{fontSize:"37px"}} icon={faClose}/></button> : 
+                    <button className="nav-action" onClick={() => setOpen(!open)} ><FontAwesomeIcon icon={faBars}/></button>
+                }
+            </div>
+
+          </div>
         </div>
+        
       </div>
   );
 };
