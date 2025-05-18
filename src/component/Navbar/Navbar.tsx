@@ -56,7 +56,6 @@ const Navbar = () => {
         <div className="navbar-content">
           <div className="navbar-header">
             <div className="navbar-header-content">
-              <h4>{user?.email}</h4>
               <Link href="/Dashboard" className='classes'>{t('classes')}</Link>
               <Link href="/Dashboard" className='classes'>{t('dashboard')}</Link>
             </div>

@@ -10,16 +10,6 @@ const Speciality = () => {
             <div className="specialty-section">
                 <div className='specialty-content'>
 
-                    <div className="first-half">
-                        <h1>Our Specialities</h1>
-                        <p>
-                            We&apos;re building Bangladesh&apos;s <span>most comprehensive academic ecosystem</span> 
-                            - where sharing knowledge rewards you. At <span>SPECTRUM</span>, we&apos;re transforming exam prep across Bangladesh&apos;s universities
-                            with these key strengths:  
-                        </p>
-                        <img src="https://aiolympiad.xyz/img/ai-olympiad.png" alt="" />
-                    </div>
-
                     <div className="second-half">
                         <div>
                             <FontAwesomeIcon icon={faBuilding} className='icon' />
@@ -53,6 +43,16 @@ const Speciality = () => {
                                 get paid for every 100 downloads of your uploads!  
                             </p>
                         </div>
+                    </div>
+
+                    <div className="first-half">
+                        <h1>Our Specialities</h1>
+                        <p>
+                            We&apos;re building Bangladesh&apos;s <span>most comprehensive academic ecosystem</span> 
+                            - where sharing knowledge rewards you. At <span>SPECTRUM</span>, we&apos;re transforming exam prep across Bangladesh&apos;s universities
+                            with these key strengths:  
+                        </p>
+                        <img src="https://aiolympiad.xyz/img/ai-olympiad.png" alt="" />
                     </div>
 
                 </div>

@@ -77,7 +77,6 @@ const Page = () => {
         try{
             const logInResponse = await loginUser(formData)
             if(logInResponse.success){
-                localStorage.setItem('accessToken',logInResponse.meta.accessToken)
                 reset()
                 router.push('/Dashboard')
                 toast.success(logInResponse?.message)

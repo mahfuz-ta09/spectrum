@@ -4,6 +4,7 @@
     border-bottom: 2px solid #fff;
 }
 
+
 .faq-content{
     width: 100%;
     min-height: 50vh;
@@ -49,7 +50,7 @@
     font-size: 40px;
     line-height: 45px;
     text-align: right;
-    color: rgb(42, 96, 78);
+    color: #000;
     font-weight: 500;
 }
 
@@ -58,7 +59,7 @@
     font-size: 18px;
     line-height: 22px;
     text-align: right;
-    color: rgb(42, 96, 78);
+    color: #000;
     font-weight: 400;
 }
 
@@ -69,19 +70,21 @@
     align-items: start;
     flex-direction: column;
     padding: 5px 20px;
+    color: #000;
 }
 
 .ind-question{
-    border-bottom: 2px dotted #ccc;
+    border-bottom: 2px dotted #000;
     margin-bottom: 10px;
     overflow: hidden;
 }
 
 .faq-question-body {
-  max-height: 0;
-  padding: 0px 10px;
-  overflow: hidden;
-  transition: max-height 0.5s ease-in-out;
+    max-height: 0;
+    padding: 0px 10px;
+    overflow: hidden;
+    transition: max-height 0.5s ease-in-out;
+    color: #000;
 }
 
 .head-question{
@@ -89,20 +92,20 @@
 }
 
 .question-checkbox:checked ~ .faq-question-body {
-  max-height: 400px;
+    max-height: 400px;
 }
 
 .question-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 10px 0px;
-  cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0px;
+    cursor: pointer;
 }
 
 .question-checkbox:checked + .question-header .plus-icon {
-  transform: rotate(180deg);
-  transition: transform 0.3s;
+    transform: rotate(180deg);
+    transition: transform 0.3s;
 }
 
 @media screen and (max-width: 500px){
