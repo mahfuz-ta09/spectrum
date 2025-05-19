@@ -56,7 +56,7 @@ const Navbar = () => {
         <div className="navbar-content">
           <div className="navbar-header">
             <div className="navbar-header-content">
-              <Link href="/Dashboard" className='classes'>{t('classes')}</Link>
+              <Link href="/classes" className='classes'>{t('classes')}</Link>
               <Link href="/Dashboard" className='classes'>{t('dashboard')}</Link>
             </div>
           </div>
