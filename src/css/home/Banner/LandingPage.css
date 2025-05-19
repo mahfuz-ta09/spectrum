@@ -119,7 +119,7 @@
     }
     
     .landingpage-img{
-        width: 95%;
+        width: 90%;
         height: 300px;
         padding: 0;
         margin: 0;
@@ -132,6 +132,7 @@
 
     .landingpage-text-content{
         padding-right: 0vw;
+        padding: 10px;
         width: 100%;
         height: 100%;
         display: flex;
@@ -149,10 +150,11 @@
         flex-direction: row;
         gap: 5px;
     }
+    
     .landingpage-text-content .title{
-        line-height: 34px;
-        font-weight: 500;
-        font-size:24px;
+        line-height: 36px;
+        font-weight: 600;
+        font-size:34px;
         text-align: center;
         color: #000;
     }
@@ -165,6 +167,7 @@
         font-weight:300;
         background:transparent;
         transition: all 0.3s ease-in-out;
+        
         &:hover{
             scale: .9;
         }
