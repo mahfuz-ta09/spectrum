@@ -1,10 +1,10 @@
 'use client'
 import '@/css/home/Courses/Courses.css';
-import { useState } from 'react';
+// import { useState } from 'react';
 
 
 const Courses = () => {
-    const [show,setShow] = useState(false);
+    // const [show,setShow] = useState(false);
 
     // const handleCourses = () => {
     //     setShow(!show);
