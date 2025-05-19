@@ -6,9 +6,9 @@ import { useState } from 'react';
 const Courses = () => {
     const [show,setShow] = useState(false);
 
-    const handleCourses = () => {
-        setShow(!show);
-    }
+    // const handleCourses = () => {
+    //     setShow(!show);
+    // }
 
     return (
         <div className='home-courses'>
