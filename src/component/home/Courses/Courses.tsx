@@ -1,7 +1,5 @@
 'use client'
 import '@/css/home/Courses/Courses.css';
-import { faAngleDown } from '@fortawesome/free-solid-svg-icons';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { useState } from 'react';
 
 
