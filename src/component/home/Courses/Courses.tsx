@@ -1,5 +1,7 @@
 'use client'
 import '@/css/home/Courses/Courses.css';
+import { faArrowAltCircleRight } from '@fortawesome/free-regular-svg-icons';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 // import { useState } from 'react';
 
 
@@ -51,7 +53,7 @@ const Courses = () => {
                         <div className="years">
                             <img className='years-image' src="https://images.pexels.com/photos/1516983/pexels-photo-1516983.jpeg" alt="" />
                             <div className="details">
-                                <h1 className='title'><span>3rd</span> year</h1>
+                                <h1 className='title'><span>1st</span> year</h1>
                                 <h4 className='year-header'>Science</h4>
                                 <p>Department of physics</p>
                                 <p>
@@ -59,8 +61,23 @@ const Courses = () => {
                                 </p>
                             </div>
                             <div className="rear-btn">
-                                <button className='rear-btn-1'>enroll</button>
-                                <button className='rear-btn-2'>details</button>
+                                {/* <button className='rear-btn-1'>enroll</button> */}
+                                <button className='rear-btn-2'><FontAwesomeIcon icon={faArrowAltCircleRight}/></button>
+                            </div>
+                        </div>
+                        <div className="years">
+                            <img className='years-image' src="https://images.pexels.com/photos/1516983/pexels-photo-1516983.jpeg" alt="" />
+                            <div className="details">
+                                <h1 className='title'><span>2nd</span> year</h1>
+                                <h4 className='year-header'>Science</h4>
+                                <p>Department of physics</p>
+                                <p>
+                                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ut explicabo 
+                                </p>
+                            </div>
+                            <div className="rear-btn">
+                                {/* <button className='rear-btn-1'>enroll</button> */}
+                                <button className='rear-btn-2'><FontAwesomeIcon icon={faArrowAltCircleRight}/></button>
                             </div>
                         </div>
                         <div className="years">
@@ -74,23 +91,8 @@ const Courses = () => {
                                 </p>
                             </div>
                             <div className="rear-btn">
-                                <button className='rear-btn-1'>enroll</button>
-                                <button className='rear-btn-2'>details</button>
-                            </div>
-                        </div>
-                        <div className="years">
-                            <img className='years-image' src="https://images.pexels.com/photos/1516983/pexels-photo-1516983.jpeg" alt="" />
-                            <div className="details">
-                                <h1 className='title'><span>3rd</span> year</h1>
-                                <h4 className='year-header'>Science</h4>
-                                <p>Department of physics</p>
-                                <p>
-                                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ut explicabo 
-                                </p>
-                            </div>
-                            <div className="rear-btn">
-                                <button className='rear-btn-1'>enroll</button>
-                                <button className='rear-btn-2'>details</button>
+                                {/* <button className='rear-btn-1'>enroll</button> */}
+                                <button className='rear-btn-2'><FontAwesomeIcon icon={faArrowAltCircleRight}/></button>
                             </div>
                         </div>
                         <div className="years">
@@ -104,8 +106,8 @@ const Courses = () => {
                                 </p>
                             </div>
                             <div className="rear-btn">
-                                <button className='rear-btn-1'>enroll</button>
-                                <button className='rear-btn-2'>details</button>
+                                {/* <button className='rear-btn-1'>enroll</button> */}
+                                <button className='rear-btn-2'><FontAwesomeIcon icon={faArrowAltCircleRight}/></button>
                             </div>
                         </div>
                     </div>

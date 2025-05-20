@@ -1,8 +1,6 @@
 
 const page = () => {
     
-    
-    
     return (
         <div className="">
             Dashboard/pages
