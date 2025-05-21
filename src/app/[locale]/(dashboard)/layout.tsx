@@ -4,10 +4,12 @@ import { faArrowAltCircleLeft, faArrowAltCircleRight, faUser } from '@fortawesom
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import Link from 'next/link'
 import { sideNavItem } from './Dashboard/sideNavItem'
+import { useUserInfo } from '@/hooks/useUserInfo'
 
 
 const layout = ({children}: {children: React.ReactNode}) => {
     const roles = sideNavItem("admin")
+    const userInfo = useUserInfo()
 
     const handleOpenNav = () => {
         const navItems = document.getElementsByClassName('nav-items')[0]
@@ -23,12 +25,13 @@ const layout = ({children}: {children: React.ReactNode}) => {
         }
     }
 
+    
     return (
         <div className="dashboard-layout">
             <div className="nav-items">
                 <img className='nav-items-img' src="https://aiolympiad.xyz/img/ai-olympiad.png" alt="" />
                 <div className='nav-items-links'>
-                    <Link href="/" className='nav-items-link active'>
+                    <Link href="/Dashboard" className='nav-items-link active'>
                         <FontAwesomeIcon className='nav-items-link-icon' icon={faUser}/>
                         <h5 className='nav-items-link-name'>Profile</h5>
                     </Link>
@@ -36,25 +39,25 @@ const layout = ({children}: {children: React.ReactNode}) => {
                         <FontAwesomeIcon className='nav-items-link-icon' icon={faUser}/>
                         <h5 className='nav-items-link-name'>My Classes</h5>
                     </Link>
-                    <Link href="/" className='nav-items-link'>
+                    <Link href="/Dashboard/admin/courses" className='nav-items-link'>
                         <FontAwesomeIcon className='nav-items-link-icon' icon={faUser}/>
                         <h5 className='nav-items-link-name'>Course</h5>
                     </Link>
                     <Link href="/" className='nav-items-link'>
                         <FontAwesomeIcon className='nav-items-link-icon' icon={faUser}/>
-                        <h5 className='nav-items-link-name'>Course</h5>
+                        <h5 className='nav-items-link-name'>Cousssse</h5>
                     </Link>
                     <Link href="/" className='nav-items-link'>
                         <FontAwesomeIcon className='nav-items-link-icon' icon={faUser}/>
-                        <h5 className='nav-items-link-name'>Course</h5>
+                        <h5 className='nav-items-link-name'>Cossssse</h5>
                     </Link>
                     <Link href="/" className='nav-items-link'>
                         <FontAwesomeIcon className='nav-items-link-icon' icon={faUser}/>
-                        <h5 className='nav-items-link-name'>Course</h5>
+                        <h5 className='nav-items-link-name'>Cossse</h5>
                     </Link>
                 </div>
                 <div className="nav-links-footer">
-                    <button onClick={()=>handleCloseNav()} ><FontAwesomeIcon icon={faArrowAltCircleLeft}/></button>
+                    <button className='nav-controll-1' onClick={()=>handleCloseNav()} ><FontAwesomeIcon icon={faArrowAltCircleLeft}/></button>
                     <Link className='nav-footer-home' href="/">home</Link>
                     <Link className='nav-footer-logout' href="/">logout</Link>
                 </div>
@@ -63,9 +66,10 @@ const layout = ({children}: {children: React.ReactNode}) => {
             <div className='dash-content'>
                 <p>title:{roles[0]?.title}</p>
                 <div className='dashboard-user'>
-                    <button onClick={()=>handleOpenNav()} ><FontAwesomeIcon icon={faArrowAltCircleRight}/></button>
-                    <p>hello mr/mrs</p>
-                    <h1>amarnam@busyness.com</h1>
+                    <button className='nav-controll-2' onClick={()=>handleOpenNav()} ><FontAwesomeIcon icon={faArrowAltCircleRight}/></button>
+                    <h1 className='dashuser-info'>{userInfo?.email}</h1>
+                    <h1 className='dashuser-info'>|status-{userInfo?.status}</h1>
+                    <h1 className='dashuser-info'>|role-{userInfo?.role}</h1>
                 </div>
                 {children}
             </div>

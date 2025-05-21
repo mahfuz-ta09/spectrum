@@ -23,7 +23,8 @@
 }
 
 .nav-items-img{
-    width: 150px;
+    width: 90%;
+    margin: 10px auto;
 }
 
 .nav-items-links{
@@ -109,21 +110,38 @@
     overflow: hidden;
     border-radius: 10px;
     position: relative;
+    overflow-y: scroll;
+    scrollbar-width: thin;
+    --webkit-scrollbar-width: thin;
 }
 
 .dashboard-user{
-    position: absolute;
+    position: fixed;
     top: 0;
     right: 0;
-    padding-right:10px ;
+    padding-right:5px ;
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 10px;
 }
 
-.dashboard-user p,h1{
+.dash-content p{
     font-size: 17px;
+    display: none;
+}
+
+.dashuser-info{
+    font-size: 15px;
+    font-weight: 300;
+    color: #000;
+}
+
+.nav-controll-1{
+    display: none;
+}
+.nav-controll-2{
+    display: none;
 }
 
 @media screen and (max-width:800px) {
@@ -140,17 +158,17 @@
     .nav-items{
         position: fixed;
         height: 100vh;
-        width: 150px;
+        width: 200px;
         border-radius: 0;
         z-index: 100;
-        left: -150px;
+        left: -200px;
         padding: 0;
-        transition: all 0.5s ease-in-out;
+        transition: all 0.2s ease-in-out;
     }
 
     .open-dash{
         left: 0;
-        transition: all 0.5s ease-in-out;
+        transition: all 0.2s ease-in-out;
     }
     
     .nav-links-footer{
@@ -160,5 +178,36 @@
         border-radius: 0px;
     }
 
-    
+    .nav-controll-2{
+        display: block;
+        position: fixed;
+        top: 10px;
+        left: 10px;
+        width: 30px;
+        height:30px;
+        background: #66CDAA;
+        border: none;
+        color: #fff;
+        font-size: 25px;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        z-index: 100000;
+    }
+
+    .nav-controll-1{
+        display: block;
+        width: 30px;
+        height:30px;
+        background: #fff;
+        border: none;
+        color: #66CDAA;
+        font-size: 25px;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        z-index: 1000;
+    }
 }
