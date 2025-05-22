@@ -2,7 +2,7 @@ import '@/css/Dashboard/admin/AddCourse.css'
 
 
 
-const AddCourse = ({ addCourse , setAddCourse }:{ addCourse :Boolean , setAddCourse: React.Dispatch<React.SetStateAction<boolean>>}) => {
+const AddCourse = ({ addCourse, setAddCourse }: { addCourse: boolean; setAddCourse: React.Dispatch<React.SetStateAction<boolean>> }) => {
     
     return (
         <div className={addCourse ? "add-course" : "hide"}>

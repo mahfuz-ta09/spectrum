@@ -320,6 +320,7 @@ const Page = () => {
                 </div>
 
             </div>
+            
             <AddCourse 
                 addCourse={addCourse}
                 setAddCourse={setAddCourse}
