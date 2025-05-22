@@ -7,6 +7,7 @@ import ProfileData from './Dashboard/ProfileData'
 import Link from 'next/link'
 
 
+
 const layout = ({children}: {children: React.ReactNode}) => {
     const roles = sideNavItem("admin")
 
@@ -44,7 +45,7 @@ const layout = ({children}: {children: React.ReactNode}) => {
                     </Link>
                     <Link href="/" className='nav-items-link'>
                         <FontAwesomeIcon className='nav-items-link-icon' icon={faUser}/>
-                        <h5 className='nav-items-link-name'>Cousssse</h5>
+                        <h5 className='nav-items-link-name'>course list</h5>
                     </Link>
                     <Link href="/" className='nav-items-link'>
                         <FontAwesomeIcon className='nav-items-link-icon' icon={faUser}/>

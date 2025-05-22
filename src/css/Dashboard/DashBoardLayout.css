@@ -49,6 +49,13 @@
     font-size: 20px;
 }
 
+
+.nav-items-link-name{
+    font-size: 12px;
+    font-weight: 500;
+    color: #000;
+}
+
 .active{
     background: #fff;
     color: #000;
@@ -177,6 +184,13 @@
         width: 100%;
         border-radius: 0px;
     }
+
+    .nav-items-link-name{
+        font-size: 12px;
+        font-weight: 500;
+        color: #000;
+    }
+
 
     .nav-controll-2{
         display: block;
