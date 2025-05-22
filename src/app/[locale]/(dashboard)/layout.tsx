@@ -2,14 +2,13 @@
 import '@/css/Dashboard/DashBoardLayout.css'
 import { faArrowAltCircleLeft, faArrowAltCircleRight, faUser } from '@fortawesome/free-regular-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import Link from 'next/link'
 import { sideNavItem } from './Dashboard/sideNavItem'
-import { useUserInfo } from '@/hooks/useUserInfo'
+import ProfileData from './Dashboard/ProfileData'
+import Link from 'next/link'
 
 
 const layout = ({children}: {children: React.ReactNode}) => {
     const roles = sideNavItem("admin")
-    const userInfo = useUserInfo()
 
     const handleOpenNav = () => {
         const navItems = document.getElementsByClassName('nav-items')[0]
@@ -65,16 +64,13 @@ const layout = ({children}: {children: React.ReactNode}) => {
 
             <div className='dash-content'>
                 <p>title:{roles[0]?.title}</p>
-                <div className='dashboard-user'>
-                    <button className='nav-controll-2' onClick={()=>handleOpenNav()} ><FontAwesomeIcon icon={faArrowAltCircleRight}/></button>
-                    <h1 className='dashuser-info'>{userInfo?.email}</h1>
-                    <h1 className='dashuser-info'>|status-{userInfo?.status}</h1>
-                    <h1 className='dashuser-info'>|role-{userInfo?.role}</h1>
-                </div>
+                <ProfileData />
+                <button className='nav-controll-2' onClick={()=>handleOpenNav()} ><FontAwesomeIcon icon={faArrowAltCircleRight}/></button>
                 {children}
             </div>
         </div>
     )
 }
+
 
 export default layout

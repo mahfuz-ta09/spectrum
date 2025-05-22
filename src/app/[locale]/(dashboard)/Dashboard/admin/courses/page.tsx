@@ -1,12 +1,18 @@
+'use client'
 import '@/css/Dashboard/admin/courses.css'
+import { useState } from 'react'
+import AddCourse from './AddCourse'
+
+
+
 
 const page = () => {
-
+    const [addCourse,setAddCourse] = useState(false)
 
     return (
         <div className="dash-course-container">
             <div className="course-button">
-                <button>
+                <button onClick={() => setAddCourse(!addCourse)} className='add-course-button'>
                     add course
                 </button>
             </div>
@@ -314,6 +320,10 @@ const page = () => {
                 </div>
 
             </div>
+            <AddCourse 
+                addCourse={addCourse}
+                setAddCourse={setAddCourse}
+            />
         </div>
     )
 }
