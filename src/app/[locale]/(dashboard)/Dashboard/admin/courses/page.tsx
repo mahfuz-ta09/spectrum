@@ -6,7 +6,7 @@ import AddCourse from './AddCourse'
 
 
 
-const page = () => {
+const Page = () => {
     const [addCourse,setAddCourse] = useState(false)
 
     return (
@@ -328,4 +328,4 @@ const page = () => {
     )
 }
 
-export default page
+export default Page
