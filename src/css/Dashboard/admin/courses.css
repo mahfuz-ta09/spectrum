@@ -25,6 +25,11 @@
     }
 }
 
+.add-course-title{
+    color: #000;
+    font-size: 230px;
+}
+
 .course-container{
     width: 100%;
     display: flex;

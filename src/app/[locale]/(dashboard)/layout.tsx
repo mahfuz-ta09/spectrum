@@ -5,11 +5,13 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { sideNavItem } from './Dashboard/sideNavItem'
 import ProfileData from './Dashboard/ProfileData'
 import Link from 'next/link'
+import { usePathname } from 'next/navigation'
 
 
 
-const layout = ({children}: {children: React.ReactNode}) => {
+const Layout = ({children}: {children: React.ReactNode}) => {
     const roles = sideNavItem("admin")
+    const pathname = usePathname()
 
     const handleOpenNav = () => {
         const navItems = document.getElementsByClassName('nav-items')[0]
@@ -25,36 +27,28 @@ const layout = ({children}: {children: React.ReactNode}) => {
         }
     }
 
+    console.log(pathname)
     
     return (
         <div className="dashboard-layout">
+            
             <div className="nav-items">
                 <img className='nav-items-img' src="https://aiolympiad.xyz/img/ai-olympiad.png" alt="" />
                 <div className='nav-items-links'>
-                    <Link href="/Dashboard" className='nav-items-link active'>
+                    <Link href="/Dashboard" className={(pathname==="/en/Dashboard"||pathname===("/bn/Dashboard")?'nav-items-link active':"nav-items-link")}>
                         <FontAwesomeIcon className='nav-items-link-icon' icon={faUser}/>
                         <h5 className='nav-items-link-name'>Profile</h5>
                     </Link>
-                    <Link href="/" className='nav-items-link'>
+                    
+                    <Link href="/Dashboard/admin/courses"  className={(pathname.includes("/courses")?'nav-items-link active':"nav-items-link")}>
                         <FontAwesomeIcon className='nav-items-link-icon' icon={faUser}/>
-                        <h5 className='nav-items-link-name'>My Classes</h5>
+                        <h5 className='nav-items-link-name'>Courses</h5>
                     </Link>
-                    <Link href="/Dashboard/admin/courses" className='nav-items-link'>
-                        <FontAwesomeIcon className='nav-items-link-icon' icon={faUser}/>
-                        <h5 className='nav-items-link-name'>Course</h5>
-                    </Link>
-                    <Link href="/" className='nav-items-link'>
+                    <Link href="/Dashboard/admin/courselist" className={(pathname.includes("/courselist")?'nav-items-link active':"nav-items-link")}>
                         <FontAwesomeIcon className='nav-items-link-icon' icon={faUser}/>
                         <h5 className='nav-items-link-name'>course list</h5>
                     </Link>
-                    <Link href="/" className='nav-items-link'>
-                        <FontAwesomeIcon className='nav-items-link-icon' icon={faUser}/>
-                        <h5 className='nav-items-link-name'>Cossssse</h5>
-                    </Link>
-                    <Link href="/" className='nav-items-link'>
-                        <FontAwesomeIcon className='nav-items-link-icon' icon={faUser}/>
-                        <h5 className='nav-items-link-name'>Cossse</h5>
-                    </Link>
+                    
                 </div>
                 <div className="nav-links-footer">
                     <button className='nav-controll-1' onClick={()=>handleCloseNav()} ><FontAwesomeIcon icon={faArrowAltCircleLeft}/></button>
@@ -74,4 +68,4 @@ const layout = ({children}: {children: React.ReactNode}) => {
 }
 
 
-export default layout
+export default Layout

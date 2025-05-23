@@ -8,7 +8,7 @@ const AddCourse = ({ addCourse, setAddCourse }: { addCourse: boolean; setAddCour
         <div className={addCourse ? "add-course" : "hide"}>
             <button className='cancel-btn' onClick={()=>setAddCourse(!addCourse)}>cancel</button>
             <div className='add-course-container'>
-                <h1 className='add-course-title'>Add  Course</h1>
+                <h1 className='add-course-title'>add course</h1>
                 
                 
                 <form className='add-course-form'>
