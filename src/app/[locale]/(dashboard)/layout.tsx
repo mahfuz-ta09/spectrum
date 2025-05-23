@@ -27,7 +27,6 @@ const Layout = ({children}: {children: React.ReactNode}) => {
         }
     }
 
-    console.log(pathname)
     
     return (
         <div className="dashboard-layout">

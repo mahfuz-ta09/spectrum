@@ -171,6 +171,7 @@
         left: -200px;
         padding: 0;
         transition: all 0.2s ease-in-out;
+        z-index: 101;
     }
 
     .open-dash{
@@ -195,10 +196,10 @@
     .nav-controll-2{
         display: block;
         position: fixed;
-        top: 10px;
+        bottom: 50px;
         left: 10px;
-        width: 30px;
-        height:30px;
+        width: 40px;
+        height:40px;
         background: #66CDAA;
         border: none;
         color: #fff;
@@ -207,7 +208,7 @@
         display: flex;
         align-items: center;
         justify-content: center;
-        z-index: 100000;
+        z-index: 100;
     }
 
     .nav-controll-1{
