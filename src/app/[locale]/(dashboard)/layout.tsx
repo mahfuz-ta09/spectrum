@@ -4,8 +4,8 @@ import { faArrowAltCircleLeft, faArrowAltCircleRight, faUser } from '@fortawesom
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { sideNavItem } from './Dashboard/sideNavItem'
 import ProfileData from './Dashboard/ProfileData'
-import Link from 'next/link'
 import { usePathname } from 'next/navigation'
+import Link from 'next/link'
 
 
 

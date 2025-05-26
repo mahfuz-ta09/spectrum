@@ -17,6 +17,7 @@ export async function middleware(request: NextRequest) {
 
     if(token) user = await jwtDecode(token)
 
+    console.log(token)
 
     for (const [srcPath, targetPath] of Object.entries(localeMapping)) {
         if (request.nextUrl.pathname.startsWith(`/${srcPath}`)) {
