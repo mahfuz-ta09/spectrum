@@ -1,12 +1,18 @@
+'use client'
 import '@/css/Dashboard/admin/courselist.css'
+import ListDegree from './ListDegree'
+import { useState } from 'react'
 
 
 
 const page = () => {
+    const [isListDegree,setIsListDegree] = useState(false)
+
+
     return (
         <div className="course-list-container">
             <div className='course-list-header'>
-                <button>list a degree</button>
+                <button onClick={()=>setIsListDegree(!isListDegree)}>list a degree</button>
             </div>
             <h1 className='listed-degree'>Listed degree</h1>
             
@@ -30,6 +36,11 @@ const page = () => {
                 </tbody>
                 </table>
             </div>
+
+            <ListDegree 
+                isListDegree={isListDegree}
+                setIsListDegree={setIsListDegree}
+            />
         </div>
     )
 }
