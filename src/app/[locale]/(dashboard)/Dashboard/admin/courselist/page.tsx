@@ -5,7 +5,7 @@ import { useState } from 'react'
 
 
 
-const page = () => {
+const Page = () => {
     const [isListDegree,setIsListDegree] = useState(false)
 
 
@@ -45,4 +45,4 @@ const page = () => {
     )
 }
 
-export default page
+export default Page
