@@ -4,10 +4,8 @@ import ListDegree from './ListDegree'
 import { useState } from 'react'
 
 
-
 const Page = () => {
     const [isListDegree,setIsListDegree] = useState(false)
-
 
     return (
         <div className="course-list-container">
@@ -28,7 +26,7 @@ const Page = () => {
                 </thead>
                 <tbody>
                     <tr>
-                        <td>2</td>
+                        <td>1</td>
                         <td>Honours</td>
                         <td>math</td>
                         <td>tensor analysis,mathematical modeling in bio... <button className='all-sub-btn'>all subjects</button></td>

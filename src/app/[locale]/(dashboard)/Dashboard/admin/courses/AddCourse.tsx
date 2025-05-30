@@ -1,7 +1,6 @@
 import '@/css/Dashboard/admin/AddCourse.css'
 
 
-
 const AddCourse = ({ addCourse, setAddCourse }: { addCourse: boolean; setAddCourse: React.Dispatch<React.SetStateAction<boolean>> }) => {
     
     return (

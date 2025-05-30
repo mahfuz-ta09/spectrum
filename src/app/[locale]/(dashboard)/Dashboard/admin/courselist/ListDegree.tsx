@@ -1,8 +1,11 @@
 import '@/css/Dashboard/admin/ListDegree.css'
 
-const ListDegree = ({isListDegree,setIsListDegree}:{isListDegree:boolean , setIsListDegree:React.Dispatch<React.SetStateAction<boolean>>}) => {
+const ListDegree = ({
+        isListDegree,
+        setIsListDegree}:{
+            isListDegree:boolean , 
+            setIsListDegree:React.Dispatch<React.SetStateAction<boolean>>}) => {
     
-
     
     return (
         <div className={isListDegree? 'list-degree-container' : 'list-degree-container-hide'}>
